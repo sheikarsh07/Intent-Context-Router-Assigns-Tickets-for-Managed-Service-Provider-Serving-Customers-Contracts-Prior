@@ -1,0 +1,209 @@
+{
+    "dataset_summary": {
+        "total_tickets": 550,
+        "train_size": 440,
+        "test_size": 110
+    },
+    "baseline": {
+        "accuracy": 0.8545454545454545,
+        "precision_weighted": 0.8642774872186638,
+        "recall_weighted": 0.8545454545454545,
+        "f1_weighted": 0.8496755186271315,
+        "bounce_rate": 0.1454545454545455
+    },
+    "context_router": {
+        "accuracy": 0.9,
+        "precision_weighted": 0.9132207851428098,
+        "recall_weighted": 0.9,
+        "f1_weighted": 0.9001708094195396,
+        "bounce_rate": 0.09999999999999998
+    },
+    "improvements": {
+        "accuracy_improvement_pct": 5.3191489361702216,
+        "bounce_reduction_pct": 31.25000000000004
+    },
+    "labels": [
+        "Application Team",
+        "Cloud Team",
+        "Database Team",
+        "Hardware Team",
+        "Network Team",
+        "Security Team"
+    ],
+    "per_class_metrics": {
+        "Application Team": {
+            "baseline": {
+                "precision": 0.8846153846153846,
+                "recall": 0.6388888888888888,
+                "f1_score": 0.7419354838709677
+            },
+            "context_router": {
+                "precision": 0.813953488372093,
+                "recall": 0.9722222222222222,
+                "f1_score": 0.8860759493670886
+            }
+        },
+        "Cloud Team": {
+            "baseline": {
+                "precision": 0.9285714285714286,
+                "recall": 1.0,
+                "f1_score": 0.9629629629629629
+            },
+            "context_router": {
+                "precision": 0.9166666666666666,
+                "recall": 0.8461538461538461,
+                "f1_score": 0.88
+            }
+        },
+        "Database Team": {
+            "baseline": {
+                "precision": 0.8,
+                "recall": 1.0,
+                "f1_score": 0.8888888888888888
+            },
+            "context_router": {
+                "precision": 1.0,
+                "recall": 0.8125,
+                "f1_score": 0.896551724137931
+            }
+        },
+        "Hardware Team": {
+            "baseline": {
+                "precision": 0.6666666666666666,
+                "recall": 0.8333333333333334,
+                "f1_score": 0.7407407407407407
+            },
+            "context_router": {
+                "precision": 1.0,
+                "recall": 0.8333333333333334,
+                "f1_score": 0.9090909090909091
+            }
+        },
+        "Network Team": {
+            "baseline": {
+                "precision": 0.8235294117647058,
+                "recall": 0.9333333333333333,
+                "f1_score": 0.875
+            },
+            "context_router": {
+                "precision": 0.8823529411764706,
+                "recall": 1.0,
+                "f1_score": 0.9375
+            }
+        },
+        "Security Team": {
+            "baseline": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1_score": 1.0
+            },
+            "context_router": {
+                "precision": 1.0,
+                "recall": 0.8333333333333334,
+                "f1_score": 0.9090909090909091
+            }
+        }
+    },
+    "confusion_matrix": {
+        "baseline": [
+            [
+                23,
+                1,
+                4,
+                5,
+                3,
+                0
+            ],
+            [
+                0,
+                13,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                16,
+                0,
+                0,
+                0
+            ],
+            [
+                2,
+                0,
+                0,
+                10,
+                0,
+                0
+            ],
+            [
+                1,
+                0,
+                0,
+                0,
+                14,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                18
+            ]
+        ],
+        "context_router": [
+            [
+                35,
+                0,
+                0,
+                0,
+                1,
+                0
+            ],
+            [
+                2,
+                11,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                3,
+                0,
+                13,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                1,
+                0,
+                10,
+                1,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                15,
+                0
+            ],
+            [
+                3,
+                0,
+                0,
+                0,
+                0,
+                15
+            ]
+        ]
+    }
+}

@@ -1,0 +1,551 @@
+ticket_id,ticket_text,intent,organization,contract,priority,channel,asset,user_role,previous_resolver,assignment_history,assignment_count,correct_resolver
+TCK-1001,URGENT: AWS EC2 instance instance status check failed,Cloud Outage,Acme Technologies,Mission Critical,High,Portal,Cloud VM,Manager,None,None,1,Cloud Team
+TCK-1002,User inquiry: ERP software crashing upon submitting monthly invoice report,Application Crash,Global Finance Inc,Premium SLA,Low,Email,Application Server,Employee,Network Team,Cloud Team -> Security Team -> Cloud Team,4,Application Team
+TCK-1003,System Alert - Ransomware threat notification detected on workstation,Security Incident,Acme Technologies,Mission Critical,High,Chat,Network Device,Employee,None,None,1,Security Team
+TCK-1004,Help needed: SQL query execution timing out for reporting service,Database Outage,ABC Corp,Standard Enterprise,Medium,Phone,Database Server,Employee,None,None,1,Database Team
+TCK-1005,URGENT: Mobile app freezing on checkout payment screen,Application Crash,Global Finance Inc,Premium SLA,Critical,Portal,Application Server,External Partner,None,None,1,Application Team
+TCK-1006,Help needed: Auto-scaling group failing to launch new cloud instances,Cloud Outage,XYZ Ltd,Basic Support,High,Phone,Cloud VM,Employee,None,None,1,Application Team
+TCK-1007,System Alert - Database connection pool exhausted on production server,Database Outage,Acme Technologies,Mission Critical,High,Phone,Database Server,Security Admin,None,None,1,Database Team
+TCK-1008,Kubernetes pod crash loop backoff on cloud node,Cloud Outage,ABC Corp,Standard Enterprise,High,Email,Cloud VM,External Partner,None,None,1,Cloud Team
+TCK-1009,Issue reported: Keyboard and trackpad unresponsive on developer laptop,Hardware Fault,Acme Technologies,Mission Critical,Low,Phone,Laptop,Employee,None,None,1,Hardware Team
+TCK-1010,User inquiry: VPN tunnel dropping connection every few minutes,VPN Issue,Acme Technologies,Mission Critical,Critical,Chat,Network Device,Manager,Database Team,Cloud Team,2,Network Team
+TCK-1011,Mobile app freezing on checkout payment screen,Application Crash,Global Finance Inc,Premium SLA,High,Email,Laptop,External Partner,None,None,1,Application Team
+TCK-1012,System Alert - PostgreSQL database service stopped unexpectedly,Database Outage,ABC Corp,Standard Enterprise,High,Email,Database Server,Employee,None,None,1,Database Team
+TCK-1013,URGENT: Potential data exfiltration alert triggered on firewall,Security Incident,Global Finance Inc,Premium SLA,Critical,Phone,Cloud VM,Security Admin,None,None,1,Security Team
+TCK-1014,Cannot connect to corporate VPN from home network,VPN Issue,Acme Technologies,Mission Critical,High,Chat,VPN,IT Admin,Hardware Team,Cloud Team,2,Network Team
+TCK-1015,URGENT: PostgreSQL database service stopped unexpectedly,Database Outage,Acme Technologies,Mission Critical,High,Phone,Database Server,External Partner,None,None,1,Database Team
+TCK-1016,URGENT: Desktop app crashing with unhandled null pointer exception,Application Crash,Acme Technologies,Mission Critical,Low,Phone,Application Server,Security Admin,None,None,1,Application Team
+TCK-1017,URGENT: Desktop PC failing to POST hardware boot diagnostic,Hardware Fault,XYZ Ltd,Basic Support,Low,Chat,Laptop,External Partner,None,None,1,Hardware Team
+TCK-1018,Issue reported: Web portal throwing HTTP 500 internal server error,Application Crash,Global Finance Inc,Premium SLA,High,Chat,Application Server,External Partner,None,None,1,Application Team
+TCK-1019,Web portal throwing HTTP 500 internal server error,Application Crash,Acme Technologies,Mission Critical,High,Chat,Desktop,Security Admin,None,None,1,Application Team
+TCK-1020,Issue reported: Suspicious multiple failed login attempts from unknown IP address,Security Incident,XYZ Ltd,Basic Support,Medium,Email,VPN,Employee,None,None,1,Security Team
+TCK-1021,Cannot connect to corporate VPN from home network,VPN Issue,ABC Corp,Standard Enterprise,Low,Phone,VPN,Manager,Hardware Team,Application Team,2,Network Team
+TCK-1022,Issue reported: PostgreSQL database service stopped unexpectedly,Database Outage,Global Finance Inc,Premium SLA,Critical,Email,Database Server,Manager,Application Team,Hardware Team -> Application Team -> Application Team,4,Database Team
+TCK-1023,Suspicious multiple failed login attempts from unknown IP address,Security Incident,ABC Corp,Standard Enterprise,Critical,Portal,Database Server,Employee,Cloud Team,Application Team,2,Security Team
+TCK-1024,Issue reported: Corrupted table index causing database deadlock,Database Outage,Acme Technologies,Mission Critical,Medium,Chat,Database Server,Security Admin,None,None,1,Database Team
+TCK-1025,URGENT: ERP software crashing upon submitting monthly invoice report,Application Crash,ABC Corp,Standard Enterprise,Medium,Chat,Application Server,Employee,None,None,1,Application Team
+TCK-1026,URGENT: Corrupted table index causing database deadlock,Database Outage,XYZ Ltd,Basic Support,Critical,Phone,Database Server,Security Admin,None,None,1,Application Team
+TCK-1027,System Alert - Employee account compromised sending phishing emails,Security Incident,Global Finance Inc,Premium SLA,Critical,Email,Desktop,Manager,None,None,1,Security Team
+TCK-1028,URGENT: Desktop app crashing with unhandled null pointer exception,Application Crash,Acme Technologies,Mission Critical,Critical,Email,Application Server,Employee,Network Team,Security Team -> Network Team -> Cloud Team,4,Application Team
+TCK-1029,System Alert - VPN tunnel dropping connection every few minutes,VPN Issue,ABC Corp,Standard Enterprise,Low,Portal,VPN,External Partner,None,None,1,Network Team
+TCK-1030,User inquiry: Desktop app crashing with unhandled null pointer exception,Application Crash,Acme Technologies,Mission Critical,High,Email,Application Server,IT Admin,None,None,1,Application Team
+TCK-1031,System Alert - Database cluster replication delay critical alert,Database Outage,Acme Technologies,Mission Critical,Critical,Portal,Database Server,Employee,Cloud Team,Hardware Team,2,Database Team
+TCK-1032,URGENT: Database cluster replication delay critical alert,Database Outage,XYZ Ltd,Basic Support,High,Chat,Database Server,IT Admin,None,None,1,Application Team
+TCK-1033,User inquiry: Kubernetes pod crash loop backoff on cloud node,Cloud Outage,ABC Corp,Standard Enterprise,Medium,Email,Cloud VM,External Partner,None,None,1,Cloud Team
+TCK-1034,Issue reported: Slow throughput over Cisco AnyConnect VPN connection,VPN Issue,Acme Technologies,Mission Critical,High,Email,VPN,IT Admin,None,None,1,Network Team
+TCK-1035,System Alert - Keyboard and trackpad unresponsive on developer laptop,Hardware Fault,Acme Technologies,Mission Critical,Critical,Phone,Laptop,Employee,Security Team,Database Team -> Security Team,3,Hardware Team
+TCK-1036,User inquiry: Cloud storage bucket access permission denied,Cloud Outage,Global Finance Inc,Premium SLA,Medium,Portal,Cloud VM,External Partner,None,None,1,Application Team
+TCK-1037,User inquiry: Azure Cloud VM unreachable via SSH connection,Cloud Outage,ABC Corp,Standard Enterprise,Critical,Email,Cloud VM,IT Admin,Network Team,Database Team -> Security Team,3,Cloud Team
+TCK-1038,Azure Cloud VM unreachable via SSH connection,Cloud Outage,ABC Corp,Standard Enterprise,High,Email,Cloud VM,IT Admin,None,None,1,Cloud Team
+TCK-1039,URGENT: Corrupted table index causing database deadlock,Database Outage,XYZ Ltd,Basic Support,High,Phone,Database Server,IT Admin,Network Team,Hardware Team -> Network Team -> Hardware Team,4,Application Team
+TCK-1040,System Alert - SQL query execution timing out for reporting service,Database Outage,Acme Technologies,Mission Critical,High,Portal,Database Server,IT Admin,None,None,1,Database Team
+TCK-1041,Help needed: Employee account compromised sending phishing emails,Security Incident,ABC Corp,Standard Enterprise,Critical,Phone,VPN,IT Admin,None,None,1,Security Team
+TCK-1042,Issue reported: Remote access gateway timeout during sign in,VPN Issue,Acme Technologies,Mission Critical,Critical,Phone,VPN,Employee,None,None,1,Network Team
+TCK-1043,User inquiry: Overheating CPU causing laptop system thermal shutdown,Hardware Fault,ABC Corp,Standard Enterprise,High,Portal,Laptop,Security Admin,None,None,1,Hardware Team
+TCK-1044,User inquiry: Slow throughput over Cisco AnyConnect VPN connection,VPN Issue,XYZ Ltd,Basic Support,Low,Phone,Network Device,IT Admin,None,None,1,Network Team
+TCK-1045,AWS EC2 instance instance status check failed,Cloud Outage,Acme Technologies,Mission Critical,Critical,Phone,Cloud VM,External Partner,None,None,1,Cloud Team
+TCK-1046,Issue reported: Keyboard and trackpad unresponsive on developer laptop,Hardware Fault,XYZ Ltd,Basic Support,Medium,Phone,Desktop,Security Admin,None,None,1,Hardware Team
+TCK-1047,Help needed: Remote access gateway timeout during sign in,VPN Issue,XYZ Ltd,Basic Support,Critical,Chat,Network Device,Security Admin,None,None,1,Network Team
+TCK-1048,System Alert - PostgreSQL database service stopped unexpectedly,Database Outage,XYZ Ltd,Basic Support,Critical,Portal,Database Server,Employee,None,None,1,Application Team
+TCK-1049,Issue reported: Database cluster replication delay critical alert,Database Outage,XYZ Ltd,Basic Support,Medium,Email,Database Server,Manager,None,None,1,Application Team
+TCK-1050,System Alert - ERP software crashing upon submitting monthly invoice report,Application Crash,Global Finance Inc,Premium SLA,Critical,Chat,Application Server,External Partner,None,None,1,Application Team
+TCK-1051,URGENT: Database connection pool exhausted on production server,Database Outage,Global Finance Inc,Premium SLA,Critical,Portal,Database Server,Manager,None,None,1,Database Team
+TCK-1052,Issue reported: VPN client giving authentication error 800,VPN Issue,Global Finance Inc,Premium SLA,Critical,Chat,Network Device,External Partner,None,None,1,Application Team
+TCK-1053,Issue reported: CRM module memory leak causing severe slow response,Application Crash,Global Finance Inc,Premium SLA,Medium,Phone,Laptop,Security Admin,None,None,1,Application Team
+TCK-1054,CRM module memory leak causing severe slow response,Application Crash,XYZ Ltd,Basic Support,Low,Phone,Laptop,IT Admin,Database Team,Cloud Team -> Network Team,3,Application Team
+TCK-1055,Issue reported: SQL query execution timing out for reporting service,Database Outage,Global Finance Inc,Premium SLA,Medium,Chat,Database Server,Manager,None,None,1,Database Team
+TCK-1056,System Alert - CRM module memory leak causing severe slow response,Application Crash,ABC Corp,Standard Enterprise,Critical,Portal,Laptop,Manager,None,None,1,Application Team
+TCK-1057,System Alert - CRM module memory leak causing severe slow response,Application Crash,ABC Corp,Standard Enterprise,Critical,Chat,Laptop,IT Admin,None,None,1,Application Team
+TCK-1058,User inquiry: Auto-scaling group failing to launch new cloud instances,Cloud Outage,XYZ Ltd,Basic Support,Critical,Chat,Cloud VM,Security Admin,None,None,1,Application Team
+TCK-1059,Employee account compromised sending phishing emails,Security Incident,Global Finance Inc,Premium SLA,Critical,Email,Network Device,Manager,None,None,1,Security Team
+TCK-1060,System Alert - ERP software crashing upon submitting monthly invoice report,Application Crash,ABC Corp,Standard Enterprise,Critical,Email,Desktop,Employee,None,None,1,Application Team
+TCK-1061,Help needed: Database connection pool exhausted on production server,Database Outage,Global Finance Inc,Premium SLA,Critical,Phone,Database Server,IT Admin,None,None,1,Database Team
+TCK-1062,System Alert - Employee account compromised sending phishing emails,Security Incident,Acme Technologies,Mission Critical,Medium,Portal,Database Server,Employee,None,None,1,Security Team
+TCK-1063,Desktop PC failing to POST hardware boot diagnostic,Hardware Fault,ABC Corp,Standard Enterprise,Medium,Email,Laptop,Employee,None,None,1,Hardware Team
+TCK-1064,Issue reported: Web portal throwing HTTP 500 internal server error,Application Crash,XYZ Ltd,Basic Support,Low,Email,Desktop,Security Admin,None,None,1,Application Team
+TCK-1065,Issue reported: Solid state drive reporting SMART disk failure error,Hardware Fault,ABC Corp,Standard Enterprise,Low,Portal,Desktop,Manager,None,None,1,Hardware Team
+TCK-1066,System Alert - CRM module memory leak causing severe slow response,Application Crash,XYZ Ltd,Basic Support,Medium,Portal,Desktop,Employee,None,None,1,Application Team
+TCK-1067,URGENT: Keyboard and trackpad unresponsive on developer laptop,Hardware Fault,ABC Corp,Standard Enterprise,High,Portal,Desktop,IT Admin,None,None,1,Hardware Team
+TCK-1068,System Alert - Laptop screen flickering and going completely blank,Hardware Fault,Global Finance Inc,Premium SLA,High,Chat,Desktop,Employee,None,None,1,Application Team
+TCK-1069,Ransomware threat notification detected on workstation,Security Incident,Acme Technologies,Mission Critical,Critical,Chat,Network Device,External Partner,None,None,1,Security Team
+TCK-1070,Help needed: Auto-scaling group failing to launch new cloud instances,Cloud Outage,Acme Technologies,Mission Critical,Critical,Chat,Cloud VM,Manager,Application Team,Application Team -> Hardware Team,3,Cloud Team
+TCK-1071,System Alert - Laptop screen flickering and going completely blank,Hardware Fault,Acme Technologies,Mission Critical,Medium,Phone,Desktop,Manager,None,None,1,Hardware Team
+TCK-1072,User inquiry: Solid state drive reporting SMART disk failure error,Hardware Fault,Acme Technologies,Mission Critical,Medium,Portal,Laptop,External Partner,Application Team,Cloud Team -> Security Team,3,Hardware Team
+TCK-1073,Cloud storage bucket access permission denied,Cloud Outage,Global Finance Inc,Premium SLA,Medium,Phone,Cloud VM,Security Admin,Security Team,Database Team -> Application Team -> Database Team,4,Cloud Team
+TCK-1074,User inquiry: Potential data exfiltration alert triggered on firewall,Security Incident,Acme Technologies,Mission Critical,Critical,Phone,Application Server,Security Admin,None,None,1,Security Team
+TCK-1075,Help needed: Solid state drive reporting SMART disk failure error,Hardware Fault,XYZ Ltd,Basic Support,High,Portal,Laptop,Employee,None,None,1,Hardware Team
+TCK-1076,Issue reported: Azure Cloud VM unreachable via SSH connection,Cloud Outage,XYZ Ltd,Basic Support,Critical,Portal,Cloud VM,Security Admin,None,None,1,Application Team
+TCK-1077,Help needed: Desktop PC failing to POST hardware boot diagnostic,Hardware Fault,XYZ Ltd,Basic Support,Medium,Phone,Laptop,IT Admin,Cloud Team,Database Team,2,Hardware Team
+TCK-1078,Azure Cloud VM unreachable via SSH connection,Cloud Outage,Global Finance Inc,Premium SLA,Critical,Chat,Cloud VM,Employee,None,None,1,Cloud Team
+TCK-1079,URGENT: Desktop PC failing to POST hardware boot diagnostic,Hardware Fault,Acme Technologies,Mission Critical,Low,Chat,Laptop,Security Admin,None,None,1,Hardware Team
+TCK-1080,Issue reported: ERP software crashing upon submitting monthly invoice report,Application Crash,XYZ Ltd,Basic Support,Low,Email,Laptop,External Partner,Cloud Team,Cloud Team -> Cloud Team,3,Application Team
+TCK-1081,System Alert - PostgreSQL database service stopped unexpectedly,Database Outage,Global Finance Inc,Premium SLA,Critical,Phone,Database Server,Security Admin,None,None,1,Database Team
+TCK-1082,Slow throughput over Cisco AnyConnect VPN connection,VPN Issue,ABC Corp,Standard Enterprise,High,Portal,VPN,Manager,Cloud Team,Security Team,2,Network Team
+TCK-1083,System Alert - Database connection pool exhausted on production server,Database Outage,Global Finance Inc,Premium SLA,Critical,Portal,Database Server,External Partner,Database Team,Hardware Team -> Network Team -> Security Team,4,Application Team
+TCK-1084,Keyboard and trackpad unresponsive on developer laptop,Hardware Fault,XYZ Ltd,Basic Support,Medium,Email,Laptop,Security Admin,None,None,1,Hardware Team
+TCK-1085,URGENT: Database connection pool exhausted on production server,Database Outage,XYZ Ltd,Basic Support,Critical,Portal,Database Server,IT Admin,None,None,1,Application Team
+TCK-1086,Help needed: Overheating CPU causing laptop system thermal shutdown,Hardware Fault,Global Finance Inc,Premium SLA,Low,Chat,Laptop,Security Admin,None,None,1,Application Team
+TCK-1087,URGENT: Mobile app freezing on checkout payment screen,Application Crash,ABC Corp,Standard Enterprise,Low,Phone,Desktop,Manager,None,None,1,Application Team
+TCK-1088,User inquiry: Corrupted table index causing database deadlock,Database Outage,Global Finance Inc,Premium SLA,Critical,Chat,Database Server,IT Admin,None,None,1,Database Team
+TCK-1089,System Alert - Employee account compromised sending phishing emails,Security Incident,Acme Technologies,Mission Critical,Medium,Email,Application Server,IT Admin,None,None,1,Security Team
+TCK-1090,Help needed: Cloud storage bucket access permission denied,Cloud Outage,Global Finance Inc,Premium SLA,Critical,Portal,Cloud VM,External Partner,None,None,1,Application Team
+TCK-1091,System Alert - Laptop screen flickering and going completely blank,Hardware Fault,ABC Corp,Standard Enterprise,Critical,Portal,Desktop,External Partner,Cloud Team,Application Team -> Application Team,3,Hardware Team
+TCK-1092,Help needed: VPN tunnel dropping connection every few minutes,VPN Issue,XYZ Ltd,Basic Support,Critical,Portal,Network Device,IT Admin,Cloud Team,Database Team -> Database Team -> Hardware Team,4,Network Team
+TCK-1093,User inquiry: ERP software crashing upon submitting monthly invoice report,Application Crash,Global Finance Inc,Premium SLA,Low,Chat,Application Server,Employee,None,None,1,Application Team
+TCK-1094,System Alert - Azure Cloud VM unreachable via SSH connection,Cloud Outage,Acme Technologies,Mission Critical,Critical,Chat,Cloud VM,External Partner,None,None,1,Cloud Team
+TCK-1095,User inquiry: Corrupted table index causing database deadlock,Database Outage,XYZ Ltd,Basic Support,High,Portal,Database Server,Security Admin,None,None,1,Application Team
+TCK-1096,User inquiry: Employee account compromised sending phishing emails,Security Incident,Acme Technologies,Mission Critical,Critical,Chat,VPN,Employee,None,None,1,Security Team
+TCK-1097,System Alert - Potential data exfiltration alert triggered on firewall,Security Incident,Acme Technologies,Mission Critical,Critical,Chat,Cloud VM,IT Admin,None,None,1,Security Team
+TCK-1098,User inquiry: SQL query execution timing out for reporting service,Database Outage,Global Finance Inc,Premium SLA,Medium,Phone,Database Server,Manager,None,None,1,Database Team
+TCK-1099,System Alert - Cloud storage bucket access permission denied,Cloud Outage,XYZ Ltd,Basic Support,High,Phone,Cloud VM,Security Admin,None,None,1,Application Team
+TCK-1100,User inquiry: Suspicious multiple failed login attempts from unknown IP address,Security Incident,Global Finance Inc,Premium SLA,High,Chat,Application Server,Employee,None,None,1,Security Team
+TCK-1101,System Alert - Database connection pool exhausted on production server,Database Outage,Acme Technologies,Mission Critical,Medium,Phone,Database Server,IT Admin,None,None,1,Database Team
+TCK-1102,Help needed: CRM module memory leak causing severe slow response,Application Crash,Global Finance Inc,Premium SLA,Low,Email,Application Server,External Partner,None,None,1,Application Team
+TCK-1103,Desktop PC failing to POST hardware boot diagnostic,Hardware Fault,ABC Corp,Standard Enterprise,Low,Chat,Laptop,Security Admin,Network Team,Network Team -> Database Team,3,Hardware Team
+TCK-1104,Help needed: Remote access gateway timeout during sign in,VPN Issue,Acme Technologies,Mission Critical,Medium,Chat,VPN,Security Admin,None,None,1,Network Team
+TCK-1105,Issue reported: SQL query execution timing out for reporting service,Database Outage,ABC Corp,Standard Enterprise,High,Chat,Database Server,External Partner,None,None,1,Database Team
+TCK-1106,System Alert - SQL query execution timing out for reporting service,Database Outage,Acme Technologies,Mission Critical,Medium,Chat,Database Server,Security Admin,None,None,1,Database Team
+TCK-1107,Issue reported: Auto-scaling group failing to launch new cloud instances,Cloud Outage,ABC Corp,Standard Enterprise,Critical,Chat,Cloud VM,Security Admin,None,None,1,Cloud Team
+TCK-1108,Issue reported: Employee account compromised sending phishing emails,Security Incident,Global Finance Inc,Premium SLA,High,Chat,Laptop,Security Admin,None,None,1,Security Team
+TCK-1109,Mobile app freezing on checkout payment screen,Application Crash,Acme Technologies,Mission Critical,Critical,Phone,Desktop,Employee,Network Team,Cloud Team -> Hardware Team -> Database Team,4,Application Team
+TCK-1110,Help needed: PostgreSQL database service stopped unexpectedly,Database Outage,XYZ Ltd,Basic Support,High,Portal,Database Server,Manager,None,None,1,Application Team
+TCK-1111,Help needed: AWS EC2 instance instance status check failed,Cloud Outage,Global Finance Inc,Premium SLA,High,Portal,Cloud VM,Employee,None,None,1,Cloud Team
+TCK-1112,Issue reported: Overheating CPU causing laptop system thermal shutdown,Hardware Fault,XYZ Ltd,Basic Support,High,Email,Desktop,Manager,None,None,1,Hardware Team
+TCK-1113,Employee account compromised sending phishing emails,Security Incident,Acme Technologies,Mission Critical,Medium,Email,Database Server,Employee,None,None,1,Security Team
+TCK-1114,User inquiry: Corrupted table index causing database deadlock,Database Outage,Acme Technologies,Mission Critical,Medium,Phone,Database Server,Employee,None,None,1,Database Team
+TCK-1115,Employee account compromised sending phishing emails,Security Incident,Acme Technologies,Mission Critical,Critical,Portal,Database Server,External Partner,None,None,1,Security Team
+TCK-1116,User inquiry: Suspicious multiple failed login attempts from unknown IP address,Security Incident,Acme Technologies,Mission Critical,Medium,Chat,Desktop,External Partner,None,None,1,Security Team
+TCK-1117,URGENT: Overheating CPU causing laptop system thermal shutdown,Hardware Fault,XYZ Ltd,Basic Support,High,Chat,Laptop,Employee,Cloud Team,Security Team,2,Hardware Team
+TCK-1118,Help needed: Unauthorized privilege escalation attempt in active directory,Security Incident,Global Finance Inc,Premium SLA,High,Chat,Application Server,External Partner,None,None,1,Security Team
+TCK-1119,System Alert - Potential data exfiltration alert triggered on firewall,Security Incident,Acme Technologies,Mission Critical,Critical,Email,Application Server,Employee,None,None,1,Security Team
+TCK-1120,URGENT: Database cluster replication delay critical alert,Database Outage,Acme Technologies,Mission Critical,Medium,Chat,Database Server,External Partner,None,None,1,Database Team
+TCK-1121,URGENT: VPN client giving authentication error 800,VPN Issue,XYZ Ltd,Basic Support,Low,Phone,VPN,External Partner,Cloud Team,Security Team,2,Application Team
+TCK-1122,Issue reported: Slow throughput over Cisco AnyConnect VPN connection,VPN Issue,XYZ Ltd,Basic Support,Medium,Portal,Network Device,Manager,None,None,1,Network Team
+TCK-1123,User inquiry: SQL query execution timing out for reporting service,Database Outage,Acme Technologies,Mission Critical,Medium,Email,Database Server,Manager,Cloud Team,Hardware Team,2,Database Team
+TCK-1124,Help needed: VPN tunnel dropping connection every few minutes,VPN Issue,ABC Corp,Standard Enterprise,Low,Portal,Network Device,Manager,None,None,1,Network Team
+TCK-1125,User inquiry: Keyboard and trackpad unresponsive on developer laptop,Hardware Fault,ABC Corp,Standard Enterprise,Low,Phone,Laptop,Security Admin,None,None,1,Hardware Team
+TCK-1126,System Alert - Cannot connect to corporate VPN from home network,VPN Issue,Global Finance Inc,Premium SLA,Critical,Chat,VPN,Security Admin,Hardware Team,Cloud Team,2,Network Team
+TCK-1127,Issue reported: Database connection pool exhausted on production server,Database Outage,Acme Technologies,Mission Critical,Critical,Phone,Database Server,External Partner,None,None,1,Database Team
+TCK-1128,URGENT: CRM module memory leak causing severe slow response,Application Crash,ABC Corp,Standard Enterprise,Medium,Chat,Desktop,External Partner,None,None,1,Application Team
+TCK-1129,Help needed: Corrupted table index causing database deadlock,Database Outage,Global Finance Inc,Premium SLA,Medium,Phone,Database Server,Security Admin,None,None,1,Database Team
+TCK-1130,Help needed: Kubernetes pod crash loop backoff on cloud node,Cloud Outage,XYZ Ltd,Basic Support,Medium,Portal,Cloud VM,Security Admin,Database Team,Security Team,2,Application Team
+TCK-1131,User inquiry: ERP software crashing upon submitting monthly invoice report,Application Crash,Acme Technologies,Mission Critical,High,Chat,Laptop,Employee,None,None,1,Application Team
+TCK-1132,Help needed: AWS EC2 instance instance status check failed,Cloud Outage,Acme Technologies,Mission Critical,High,Email,Cloud VM,IT Admin,None,None,1,Cloud Team
+TCK-1133,Help needed: Database connection pool exhausted on production server,Database Outage,Acme Technologies,Mission Critical,High,Chat,Database Server,Employee,None,None,1,Database Team
+TCK-1134,Desktop app crashing with unhandled null pointer exception,Application Crash,ABC Corp,Standard Enterprise,High,Portal,Desktop,External Partner,Database Team,Database Team -> Database Team -> Network Team,4,Application Team
+TCK-1135,User inquiry: SQL query execution timing out for reporting service,Database Outage,Global Finance Inc,Premium SLA,Medium,Portal,Database Server,Employee,None,None,1,Database Team
+TCK-1136,System Alert - Corrupted table index causing database deadlock,Database Outage,Global Finance Inc,Premium SLA,Critical,Phone,Database Server,IT Admin,None,None,1,Database Team
+TCK-1137,URGENT: Desktop app crashing with unhandled null pointer exception,Application Crash,ABC Corp,Standard Enterprise,Low,Portal,Application Server,Manager,None,None,1,Application Team
+TCK-1138,System Alert - Cloud storage bucket access permission denied,Cloud Outage,Global Finance Inc,Premium SLA,High,Portal,Cloud VM,Security Admin,None,None,1,Cloud Team
+TCK-1139,Remote access gateway timeout during sign in,VPN Issue,Global Finance Inc,Premium SLA,Low,Email,Network Device,External Partner,None,None,1,Application Team
+TCK-1140,URGENT: ERP software crashing upon submitting monthly invoice report,Application Crash,XYZ Ltd,Basic Support,Medium,Phone,Application Server,IT Admin,None,None,1,Application Team
+TCK-1141,System Alert - Cannot connect to corporate VPN from home network,VPN Issue,Global Finance Inc,Premium SLA,Critical,Email,VPN,Manager,None,None,1,Network Team
+TCK-1142,URGENT: Kubernetes pod crash loop backoff on cloud node,Cloud Outage,Global Finance Inc,Premium SLA,Medium,Chat,Cloud VM,Employee,None,None,1,Cloud Team
+TCK-1143,System Alert - Keyboard and trackpad unresponsive on developer laptop,Hardware Fault,Global Finance Inc,Premium SLA,Low,Chat,Desktop,Security Admin,Security Team,Cloud Team -> Hardware Team,3,Application Team
+TCK-1144,URGENT: Kubernetes pod crash loop backoff on cloud node,Cloud Outage,Global Finance Inc,Premium SLA,Critical,Chat,Cloud VM,Employee,None,None,1,Cloud Team
+TCK-1145,Employee account compromised sending phishing emails,Security Incident,Acme Technologies,Mission Critical,High,Portal,VPN,Manager,None,None,1,Security Team
+TCK-1146,User inquiry: Slow throughput over Cisco AnyConnect VPN connection,VPN Issue,XYZ Ltd,Basic Support,Medium,Email,Network Device,IT Admin,Database Team,Database Team -> Cloud Team,3,Network Team
+TCK-1147,Issue reported: Database connection pool exhausted on production server,Database Outage,Global Finance Inc,Premium SLA,Critical,Phone,Database Server,Security Admin,Application Team,Application Team,2,Database Team
+TCK-1148,Help needed: Kubernetes pod crash loop backoff on cloud node,Cloud Outage,ABC Corp,Standard Enterprise,Critical,Chat,Cloud VM,IT Admin,None,None,1,Cloud Team
+TCK-1149,Help needed: Remote access gateway timeout during sign in,VPN Issue,ABC Corp,Standard Enterprise,Critical,Portal,Network Device,Employee,None,None,1,Network Team
+TCK-1150,Help needed: Web portal throwing HTTP 500 internal server error,Application Crash,Global Finance Inc,Premium SLA,Low,Chat,Application Server,External Partner,Network Team,Cloud Team -> Security Team,3,Application Team
+TCK-1151,VPN tunnel dropping connection every few minutes,VPN Issue,Global Finance Inc,Premium SLA,High,Phone,VPN,Security Admin,None,None,1,Network Team
+TCK-1152,Help needed: Unauthorized privilege escalation attempt in active directory,Security Incident,ABC Corp,Standard Enterprise,Critical,Portal,Laptop,IT Admin,None,None,1,Security Team
+TCK-1153,Help needed: Employee account compromised sending phishing emails,Security Incident,XYZ Ltd,Basic Support,High,Phone,Laptop,IT Admin,None,None,1,Security Team
+TCK-1154,Issue reported: Cloud storage bucket access permission denied,Cloud Outage,ABC Corp,Standard Enterprise,Critical,Email,Cloud VM,IT Admin,None,None,1,Cloud Team
+TCK-1155,URGENT: Auto-scaling group failing to launch new cloud instances,Cloud Outage,Global Finance Inc,Premium SLA,Medium,Phone,Cloud VM,External Partner,None,None,1,Application Team
+TCK-1156,System Alert - Database cluster replication delay critical alert,Database Outage,XYZ Ltd,Basic Support,High,Portal,Database Server,Manager,None,None,1,Application Team
+TCK-1157,User inquiry: Slow throughput over Cisco AnyConnect VPN connection,VPN Issue,ABC Corp,Standard Enterprise,Critical,Email,VPN,IT Admin,Cloud Team,Database Team -> Application Team -> Security Team,4,Network Team
+TCK-1158,Employee account compromised sending phishing emails,Security Incident,XYZ Ltd,Basic Support,Critical,Chat,Cloud VM,Security Admin,Hardware Team,Application Team,2,Security Team
+TCK-1159,Database cluster replication delay critical alert,Database Outage,Global Finance Inc,Premium SLA,Critical,Chat,Database Server,Security Admin,None,None,1,Database Team
+TCK-1160,Issue reported: PostgreSQL database service stopped unexpectedly,Database Outage,Acme Technologies,Mission Critical,Critical,Portal,Database Server,Employee,None,None,1,Database Team
+TCK-1161,Help needed: ERP software crashing upon submitting monthly invoice report,Application Crash,ABC Corp,Standard Enterprise,Critical,Email,Laptop,Manager,None,None,1,Application Team
+TCK-1162,System Alert - VPN tunnel dropping connection every few minutes,VPN Issue,Acme Technologies,Mission Critical,Low,Chat,Network Device,Employee,None,None,1,Network Team
+TCK-1163,URGENT: Corrupted table index causing database deadlock,Database Outage,Acme Technologies,Mission Critical,Critical,Portal,Database Server,Manager,None,None,1,Database Team
+TCK-1164,Issue reported: Kubernetes pod crash loop backoff on cloud node,Cloud Outage,XYZ Ltd,Basic Support,Critical,Email,Cloud VM,Employee,None,None,1,Application Team
+TCK-1165,User inquiry: Unauthorized privilege escalation attempt in active directory,Security Incident,ABC Corp,Standard Enterprise,Critical,Email,Laptop,Employee,None,None,1,Security Team
+TCK-1166,User inquiry: Desktop app crashing with unhandled null pointer exception,Application Crash,Global Finance Inc,Premium SLA,Medium,Phone,Laptop,Employee,Hardware Team,Cloud Team,2,Application Team
+TCK-1167,URGENT: Suspicious multiple failed login attempts from unknown IP address,Security Incident,Global Finance Inc,Premium SLA,Medium,Email,Cloud VM,External Partner,None,None,1,Security Team
+TCK-1168,URGENT: Overheating CPU causing laptop system thermal shutdown,Hardware Fault,Acme Technologies,Mission Critical,Medium,Portal,Desktop,Manager,None,None,1,Hardware Team
+TCK-1169,User inquiry: Laptop screen flickering and going completely blank,Hardware Fault,ABC Corp,Standard Enterprise,Low,Chat,Desktop,Security Admin,None,None,1,Hardware Team
+TCK-1170,Help needed: Laptop screen flickering and going completely blank,Hardware Fault,ABC Corp,Standard Enterprise,Low,Phone,Laptop,IT Admin,Cloud Team,Database Team -> Security Team,3,Hardware Team
+TCK-1171,Cloud storage bucket access permission denied,Cloud Outage,Global Finance Inc,Premium SLA,Medium,Chat,Cloud VM,Manager,Network Team,Security Team,2,Cloud Team
+TCK-1172,Help needed: Remote access gateway timeout during sign in,VPN Issue,Global Finance Inc,Premium SLA,High,Portal,Network Device,External Partner,None,None,1,Application Team
+TCK-1173,Help needed: Database cluster replication delay critical alert,Database Outage,ABC Corp,Standard Enterprise,Medium,Phone,Database Server,IT Admin,None,None,1,Database Team
+TCK-1174,System Alert - Unauthorized privilege escalation attempt in active directory,Security Incident,Acme Technologies,Mission Critical,Critical,Phone,Database Server,Manager,None,None,1,Security Team
+TCK-1175,URGENT: Mobile app freezing on checkout payment screen,Application Crash,Global Finance Inc,Premium SLA,Medium,Phone,Laptop,Employee,None,None,1,Application Team
+TCK-1176,Remote access gateway timeout during sign in,VPN Issue,Acme Technologies,Mission Critical,Critical,Email,Network Device,IT Admin,None,None,1,Network Team
+TCK-1177,URGENT: Overheating CPU causing laptop system thermal shutdown,Hardware Fault,Acme Technologies,Mission Critical,High,Portal,Desktop,External Partner,Application Team,Database Team -> Cloud Team -> Security Team,4,Hardware Team
+TCK-1178,User inquiry: VPN tunnel dropping connection every few minutes,VPN Issue,Global Finance Inc,Premium SLA,Low,Email,VPN,Employee,None,None,1,Network Team
+TCK-1179,System Alert - Solid state drive reporting SMART disk failure error,Hardware Fault,ABC Corp,Standard Enterprise,Critical,Phone,Laptop,External Partner,None,None,1,Hardware Team
+TCK-1180,Issue reported: Slow throughput over Cisco AnyConnect VPN connection,VPN Issue,Acme Technologies,Mission Critical,High,Email,Network Device,Security Admin,None,None,1,Network Team
+TCK-1181,System Alert - VPN tunnel dropping connection every few minutes,VPN Issue,Global Finance Inc,Premium SLA,High,Phone,VPN,External Partner,None,None,1,Application Team
+TCK-1182,Help needed: PostgreSQL database service stopped unexpectedly,Database Outage,Global Finance Inc,Premium SLA,High,Portal,Database Server,Manager,None,None,1,Database Team
+TCK-1183,URGENT: Cloud storage bucket access permission denied,Cloud Outage,Acme Technologies,Mission Critical,Critical,Phone,Cloud VM,IT Admin,None,None,1,Cloud Team
+TCK-1184,Help needed: Azure Cloud VM unreachable via SSH connection,Cloud Outage,XYZ Ltd,Basic Support,High,Email,Cloud VM,Employee,None,None,1,Application Team
+TCK-1185,User inquiry: Remote access gateway timeout during sign in,VPN Issue,Acme Technologies,Mission Critical,Low,Portal,VPN,Security Admin,None,None,1,Network Team
+TCK-1186,User inquiry: Cloud storage bucket access permission denied,Cloud Outage,Global Finance Inc,Premium SLA,High,Phone,Cloud VM,Security Admin,None,None,1,Cloud Team
+TCK-1187,Unauthorized privilege escalation attempt in active directory,Security Incident,Acme Technologies,Mission Critical,High,Email,Network Device,Manager,None,None,1,Security Team
+TCK-1188,User inquiry: Cannot connect to corporate VPN from home network,VPN Issue,XYZ Ltd,Basic Support,Medium,Phone,VPN,IT Admin,None,None,1,Network Team
+TCK-1189,User inquiry: Database cluster replication delay critical alert,Database Outage,Acme Technologies,Mission Critical,High,Phone,Database Server,Employee,Cloud Team,Cloud Team -> Network Team,3,Database Team
+TCK-1190,User inquiry: Web portal throwing HTTP 500 internal server error,Application Crash,XYZ Ltd,Basic Support,High,Portal,Desktop,Manager,None,None,1,Application Team
+TCK-1191,URGENT: Cannot connect to corporate VPN from home network,VPN Issue,Acme Technologies,Mission Critical,Low,Chat,Network Device,Manager,None,None,1,Network Team
+TCK-1192,Mobile app freezing on checkout payment screen,Application Crash,Acme Technologies,Mission Critical,Critical,Phone,Application Server,Security Admin,None,None,1,Application Team
+TCK-1193,Issue reported: AWS EC2 instance instance status check failed,Cloud Outage,Global Finance Inc,Premium SLA,Critical,Email,Cloud VM,Security Admin,None,None,1,Cloud Team
+TCK-1194,Database cluster replication delay critical alert,Database Outage,Acme Technologies,Mission Critical,High,Phone,Database Server,IT Admin,None,None,1,Database Team
+TCK-1195,Issue reported: Remote access gateway timeout during sign in,VPN Issue,Global Finance Inc,Premium SLA,Critical,Email,Network Device,Employee,Hardware Team,Application Team,2,Network Team
+TCK-1196,Issue reported: CRM module memory leak causing severe slow response,Application Crash,XYZ Ltd,Basic Support,High,Email,Desktop,IT Admin,None,None,1,Application Team
+TCK-1197,System Alert - Potential data exfiltration alert triggered on firewall,Security Incident,Global Finance Inc,Premium SLA,Medium,Portal,Database Server,IT Admin,None,None,1,Security Team
+TCK-1198,Issue reported: CRM module memory leak causing severe slow response,Application Crash,XYZ Ltd,Basic Support,Low,Portal,Laptop,External Partner,None,None,1,Application Team
+TCK-1199,Help needed: CRM module memory leak causing severe slow response,Application Crash,ABC Corp,Standard Enterprise,Medium,Phone,Laptop,Employee,None,None,1,Application Team
+TCK-1200,URGENT: Employee account compromised sending phishing emails,Security Incident,Global Finance Inc,Premium SLA,High,Phone,Cloud VM,Employee,None,None,1,Security Team
+TCK-1201,User inquiry: VPN client giving authentication error 800,VPN Issue,Global Finance Inc,Premium SLA,Low,Email,Network Device,External Partner,None,None,1,Application Team
+TCK-1202,Help needed: Employee account compromised sending phishing emails,Security Incident,Acme Technologies,Mission Critical,Critical,Portal,Desktop,Manager,Hardware Team,Application Team,2,Security Team
+TCK-1203,Issue reported: CRM module memory leak causing severe slow response,Application Crash,XYZ Ltd,Basic Support,High,Email,Desktop,IT Admin,None,None,1,Application Team
+TCK-1204,User inquiry: Mobile app freezing on checkout payment screen,Application Crash,Acme Technologies,Mission Critical,Critical,Phone,Desktop,External Partner,None,None,1,Application Team
+TCK-1205,Help needed: Remote access gateway timeout during sign in,VPN Issue,ABC Corp,Standard Enterprise,Low,Chat,Network Device,Security Admin,None,None,1,Network Team
+TCK-1206,User inquiry: Auto-scaling group failing to launch new cloud instances,Cloud Outage,XYZ Ltd,Basic Support,High,Chat,Cloud VM,Employee,Security Team,Network Team -> Cloud Team -> Network Team,4,Application Team
+TCK-1207,System Alert - Database connection pool exhausted on production server,Database Outage,Acme Technologies,Mission Critical,Critical,Email,Database Server,Security Admin,None,None,1,Database Team
+TCK-1208,CRM module memory leak causing severe slow response,Application Crash,ABC Corp,Standard Enterprise,Medium,Phone,Desktop,Manager,None,None,1,Application Team
+TCK-1209,System Alert - Potential data exfiltration alert triggered on firewall,Security Incident,Acme Technologies,Mission Critical,Critical,Phone,Database Server,Manager,None,None,1,Security Team
+TCK-1210,User inquiry: Kubernetes pod crash loop backoff on cloud node,Cloud Outage,Global Finance Inc,Premium SLA,Critical,Phone,Cloud VM,Manager,Database Team,Security Team -> Hardware Team,3,Cloud Team
+TCK-1211,Help needed: Overheating CPU causing laptop system thermal shutdown,Hardware Fault,Acme Technologies,Mission Critical,Critical,Chat,Laptop,IT Admin,None,None,1,Hardware Team
+TCK-1212,URGENT: Database cluster replication delay critical alert,Database Outage,Acme Technologies,Mission Critical,Critical,Phone,Database Server,Employee,None,None,1,Database Team
+TCK-1213,User inquiry: SQL query execution timing out for reporting service,Database Outage,Acme Technologies,Mission Critical,High,Portal,Database Server,External Partner,None,None,1,Database Team
+TCK-1214,Issue reported: Web portal throwing HTTP 500 internal server error,Application Crash,ABC Corp,Standard Enterprise,Medium,Portal,Application Server,External Partner,Hardware Team,Network Team -> Security Team,3,Application Team
+TCK-1215,Issue reported: Slow throughput over Cisco AnyConnect VPN connection,VPN Issue,Global Finance Inc,Premium SLA,Medium,Phone,Network Device,Security Admin,None,None,1,Network Team
+TCK-1216,URGENT: AWS EC2 instance instance status check failed,Cloud Outage,XYZ Ltd,Basic Support,High,Chat,Cloud VM,External Partner,None,None,1,Application Team
+TCK-1217,System Alert - Database connection pool exhausted on production server,Database Outage,Global Finance Inc,Premium SLA,Medium,Portal,Database Server,Manager,None,None,1,Database Team
+TCK-1218,Help needed: ERP software crashing upon submitting monthly invoice report,Application Crash,Acme Technologies,Mission Critical,Critical,Email,Desktop,Security Admin,None,None,1,Application Team
+TCK-1219,Issue reported: Employee account compromised sending phishing emails,Security Incident,ABC Corp,Standard Enterprise,Critical,Phone,Desktop,IT Admin,None,None,1,Security Team
+TCK-1220,Help needed: Remote access gateway timeout during sign in,VPN Issue,XYZ Ltd,Basic Support,Critical,Phone,Network Device,Manager,Security Team,Database Team -> Database Team -> Application Team,4,Network Team
+TCK-1221,URGENT: Desktop PC failing to POST hardware boot diagnostic,Hardware Fault,Acme Technologies,Mission Critical,Critical,Phone,Laptop,Security Admin,None,None,1,Hardware Team
+TCK-1222,Keyboard and trackpad unresponsive on developer laptop,Hardware Fault,ABC Corp,Standard Enterprise,Medium,Portal,Desktop,IT Admin,None,None,1,Hardware Team
+TCK-1223,Issue reported: Employee account compromised sending phishing emails,Security Incident,Global Finance Inc,Premium SLA,Critical,Portal,Application Server,External Partner,None,None,1,Security Team
+TCK-1224,User inquiry: Solid state drive reporting SMART disk failure error,Hardware Fault,XYZ Ltd,Basic Support,Critical,Email,Laptop,Manager,None,None,1,Hardware Team
+TCK-1225,System Alert - Mobile app freezing on checkout payment screen,Application Crash,Global Finance Inc,Premium SLA,Medium,Email,Desktop,External Partner,None,None,1,Application Team
+TCK-1226,User inquiry: ERP software crashing upon submitting monthly invoice report,Application Crash,Global Finance Inc,Premium SLA,High,Portal,Desktop,External Partner,None,None,1,Application Team
+TCK-1227,User inquiry: Cannot connect to corporate VPN from home network,VPN Issue,XYZ Ltd,Basic Support,Medium,Phone,VPN,External Partner,None,None,1,Application Team
+TCK-1228,Suspicious multiple failed login attempts from unknown IP address,Security Incident,XYZ Ltd,Basic Support,Medium,Chat,Database Server,External Partner,None,None,1,Security Team
+TCK-1229,User inquiry: Ransomware threat notification detected on workstation,Security Incident,Global Finance Inc,Premium SLA,Medium,Chat,Cloud VM,Security Admin,None,None,1,Security Team
+TCK-1230,System Alert - Laptop screen flickering and going completely blank,Hardware Fault,Acme Technologies,Mission Critical,Low,Portal,Laptop,Employee,None,None,1,Hardware Team
+TCK-1231,User inquiry: AWS EC2 instance instance status check failed,Cloud Outage,ABC Corp,Standard Enterprise,Medium,Phone,Cloud VM,Employee,None,None,1,Cloud Team
+TCK-1232,Help needed: Corrupted table index causing database deadlock,Database Outage,Global Finance Inc,Premium SLA,Critical,Portal,Database Server,Security Admin,None,None,1,Database Team
+TCK-1233,Issue reported: Auto-scaling group failing to launch new cloud instances,Cloud Outage,Acme Technologies,Mission Critical,Critical,Email,Cloud VM,Employee,None,None,1,Cloud Team
+TCK-1234,URGENT: Database connection pool exhausted on production server,Database Outage,Acme Technologies,Mission Critical,Critical,Email,Database Server,Security Admin,Security Team,Hardware Team -> Security Team,3,Database Team
+TCK-1235,URGENT: AWS EC2 instance instance status check failed,Cloud Outage,Global Finance Inc,Premium SLA,High,Email,Cloud VM,External Partner,Network Team,Hardware Team -> Cloud Team -> Network Team,4,Application Team
+TCK-1236,System Alert - Database connection pool exhausted on production server,Database Outage,Global Finance Inc,Premium SLA,Medium,Email,Database Server,Manager,None,None,1,Database Team
+TCK-1237,Desktop PC failing to POST hardware boot diagnostic,Hardware Fault,Acme Technologies,Mission Critical,Medium,Phone,Desktop,External Partner,None,None,1,Hardware Team
+TCK-1238,Issue reported: Auto-scaling group failing to launch new cloud instances,Cloud Outage,Global Finance Inc,Premium SLA,Medium,Email,Cloud VM,IT Admin,None,None,1,Cloud Team
+TCK-1239,System Alert - Potential data exfiltration alert triggered on firewall,Security Incident,ABC Corp,Standard Enterprise,Critical,Phone,Application Server,IT Admin,None,None,1,Security Team
+TCK-1240,Help needed: Ransomware threat notification detected on workstation,Security Incident,Global Finance Inc,Premium SLA,Critical,Email,Network Device,Manager,None,None,1,Security Team
+TCK-1241,System Alert - Desktop PC failing to POST hardware boot diagnostic,Hardware Fault,ABC Corp,Standard Enterprise,Critical,Email,Desktop,External Partner,None,None,1,Hardware Team
+TCK-1242,Help needed: Desktop PC failing to POST hardware boot diagnostic,Hardware Fault,ABC Corp,Standard Enterprise,Low,Email,Desktop,Security Admin,Cloud Team,Cloud Team -> Network Team,3,Hardware Team
+TCK-1243,User inquiry: VPN tunnel dropping connection every few minutes,VPN Issue,XYZ Ltd,Basic Support,High,Phone,VPN,Security Admin,None,None,1,Network Team
+TCK-1244,Issue reported: VPN tunnel dropping connection every few minutes,VPN Issue,ABC Corp,Standard Enterprise,Medium,Chat,VPN,Security Admin,None,None,1,Network Team
+TCK-1245,Help needed: Mobile app freezing on checkout payment screen,Application Crash,Global Finance Inc,Premium SLA,High,Phone,Desktop,Security Admin,None,None,1,Application Team
+TCK-1246,System Alert - CRM module memory leak causing severe slow response,Application Crash,ABC Corp,Standard Enterprise,Medium,Phone,Laptop,Security Admin,None,None,1,Application Team
+TCK-1247,Issue reported: Slow throughput over Cisco AnyConnect VPN connection,VPN Issue,XYZ Ltd,Basic Support,Critical,Phone,Network Device,Employee,Database Team,Application Team -> Cloud Team,3,Network Team
+TCK-1248,User inquiry: Corrupted table index causing database deadlock,Database Outage,Acme Technologies,Mission Critical,Critical,Chat,Database Server,IT Admin,Security Team,Security Team -> Cloud Team,3,Database Team
+TCK-1249,User inquiry: Ransomware threat notification detected on workstation,Security Incident,ABC Corp,Standard Enterprise,Medium,Portal,Laptop,External Partner,None,None,1,Security Team
+TCK-1250,Ransomware threat notification detected on workstation,Security Incident,XYZ Ltd,Basic Support,High,Portal,Application Server,Employee,Hardware Team,Network Team -> Cloud Team,3,Security Team
+TCK-1251,System Alert - Auto-scaling group failing to launch new cloud instances,Cloud Outage,Global Finance Inc,Premium SLA,Critical,Portal,Cloud VM,Employee,Database Team,Application Team -> Database Team -> Network Team,4,Cloud Team
+TCK-1252,Issue reported: CRM module memory leak causing severe slow response,Application Crash,ABC Corp,Standard Enterprise,Medium,Email,Desktop,Employee,Database Team,Database Team -> Database Team -> Hardware Team,4,Application Team
+TCK-1253,System Alert - Remote access gateway timeout during sign in,VPN Issue,Global Finance Inc,Premium SLA,Medium,Phone,VPN,External Partner,None,None,1,Application Team
+TCK-1254,URGENT: Cannot connect to corporate VPN from home network,VPN Issue,Global Finance Inc,Premium SLA,Critical,Portal,Network Device,Security Admin,None,None,1,Network Team
+TCK-1255,URGENT: Azure Cloud VM unreachable via SSH connection,Cloud Outage,Global Finance Inc,Premium SLA,Medium,Portal,Cloud VM,Security Admin,Application Team,Hardware Team -> Database Team -> Network Team,4,Cloud Team
+TCK-1256,User inquiry: Remote access gateway timeout during sign in,VPN Issue,ABC Corp,Standard Enterprise,Low,Email,Network Device,Manager,None,None,1,Network Team
+TCK-1257,URGENT: Cloud storage bucket access permission denied,Cloud Outage,Acme Technologies,Mission Critical,Critical,Phone,Cloud VM,Manager,None,None,1,Cloud Team
+TCK-1258,Azure Cloud VM unreachable via SSH connection,Cloud Outage,ABC Corp,Standard Enterprise,Medium,Portal,Cloud VM,External Partner,None,None,1,Cloud Team
+TCK-1259,User inquiry: Remote access gateway timeout during sign in,VPN Issue,Global Finance Inc,Premium SLA,High,Chat,VPN,IT Admin,None,None,1,Network Team
+TCK-1260,System Alert - Keyboard and trackpad unresponsive on developer laptop,Hardware Fault,Global Finance Inc,Premium SLA,Low,Phone,Desktop,Manager,None,None,1,Application Team
+TCK-1261,URGENT: AWS EC2 instance instance status check failed,Cloud Outage,Acme Technologies,Mission Critical,High,Chat,Cloud VM,Manager,None,None,1,Cloud Team
+TCK-1262,URGENT: Cannot connect to corporate VPN from home network,VPN Issue,Acme Technologies,Mission Critical,High,Portal,Network Device,Security Admin,Application Team,Application Team,2,Network Team
+TCK-1263,User inquiry: Desktop app crashing with unhandled null pointer exception,Application Crash,Global Finance Inc,Premium SLA,Low,Phone,Application Server,Employee,None,None,1,Application Team
+TCK-1264,Help needed: Desktop app crashing with unhandled null pointer exception,Application Crash,Global Finance Inc,Premium SLA,Critical,Chat,Laptop,Employee,None,None,1,Application Team
+TCK-1265,Issue reported: Auto-scaling group failing to launch new cloud instances,Cloud Outage,XYZ Ltd,Basic Support,High,Phone,Cloud VM,Security Admin,None,None,1,Application Team
+TCK-1266,URGENT: Ransomware threat notification detected on workstation,Security Incident,XYZ Ltd,Basic Support,Critical,Phone,VPN,Security Admin,None,None,1,Security Team
+TCK-1267,Help needed: Remote access gateway timeout during sign in,VPN Issue,XYZ Ltd,Basic Support,Critical,Portal,VPN,Security Admin,Application Team,Hardware Team,2,Network Team
+TCK-1268,Help needed: CRM module memory leak causing severe slow response,Application Crash,Global Finance Inc,Premium SLA,Medium,Phone,Laptop,IT Admin,None,None,1,Application Team
+TCK-1269,System Alert - Azure Cloud VM unreachable via SSH connection,Cloud Outage,Acme Technologies,Mission Critical,Critical,Phone,Cloud VM,Manager,None,None,1,Cloud Team
+TCK-1270,User inquiry: Cloud storage bucket access permission denied,Cloud Outage,XYZ Ltd,Basic Support,Critical,Chat,Cloud VM,IT Admin,None,None,1,Application Team
+TCK-1271,User inquiry: Web portal throwing HTTP 500 internal server error,Application Crash,XYZ Ltd,Basic Support,Critical,Email,Application Server,External Partner,None,None,1,Application Team
+TCK-1272,System Alert - Laptop screen flickering and going completely blank,Hardware Fault,Global Finance Inc,Premium SLA,Medium,Phone,Desktop,Manager,None,None,1,Application Team
+TCK-1273,System Alert - Cloud storage bucket access permission denied,Cloud Outage,ABC Corp,Standard Enterprise,Critical,Chat,Cloud VM,Security Admin,None,None,1,Cloud Team
+TCK-1274,User inquiry: Keyboard and trackpad unresponsive on developer laptop,Hardware Fault,ABC Corp,Standard Enterprise,High,Email,Laptop,Employee,None,None,1,Hardware Team
+TCK-1275,Slow throughput over Cisco AnyConnect VPN connection,VPN Issue,Global Finance Inc,Premium SLA,Low,Portal,Network Device,IT Admin,Cloud Team,Cloud Team,2,Network Team
+TCK-1276,Desktop app crashing with unhandled null pointer exception,Application Crash,XYZ Ltd,Basic Support,Critical,Chat,Laptop,Security Admin,None,None,1,Application Team
+TCK-1277,Issue reported: Desktop app crashing with unhandled null pointer exception,Application Crash,Acme Technologies,Mission Critical,Low,Phone,Laptop,Employee,None,None,1,Application Team
+TCK-1278,Cannot connect to corporate VPN from home network,VPN Issue,XYZ Ltd,Basic Support,High,Chat,Network Device,IT Admin,None,None,1,Network Team
+TCK-1279,Help needed: CRM module memory leak causing severe slow response,Application Crash,Global Finance Inc,Premium SLA,Critical,Phone,Laptop,Employee,Network Team,Network Team,2,Application Team
+TCK-1280,Laptop screen flickering and going completely blank,Hardware Fault,XYZ Ltd,Basic Support,Medium,Phone,Laptop,Manager,None,None,1,Hardware Team
+TCK-1281,System Alert - Ransomware threat notification detected on workstation,Security Incident,XYZ Ltd,Basic Support,Critical,Chat,Application Server,Manager,Database Team,Application Team -> Cloud Team -> Application Team,4,Security Team
+TCK-1282,Suspicious multiple failed login attempts from unknown IP address,Security Incident,XYZ Ltd,Basic Support,Medium,Portal,VPN,Manager,None,None,1,Security Team
+TCK-1283,Help needed: Web portal throwing HTTP 500 internal server error,Application Crash,Acme Technologies,Mission Critical,Low,Phone,Laptop,Manager,None,None,1,Application Team
+TCK-1284,Potential data exfiltration alert triggered on firewall,Security Incident,Acme Technologies,Mission Critical,Critical,Portal,Database Server,External Partner,None,None,1,Security Team
+TCK-1285,Issue reported: Potential data exfiltration alert triggered on firewall,Security Incident,Acme Technologies,Mission Critical,Medium,Email,Cloud VM,External Partner,None,None,1,Security Team
+TCK-1286,URGENT: Database cluster replication delay critical alert,Database Outage,XYZ Ltd,Basic Support,Critical,Chat,Database Server,IT Admin,None,None,1,Application Team
+TCK-1287,System Alert - CRM module memory leak causing severe slow response,Application Crash,XYZ Ltd,Basic Support,Medium,Email,Desktop,Security Admin,None,None,1,Application Team
+TCK-1288,Help needed: SQL query execution timing out for reporting service,Database Outage,Global Finance Inc,Premium SLA,Critical,Portal,Database Server,External Partner,None,None,1,Application Team
+TCK-1289,User inquiry: Corrupted table index causing database deadlock,Database Outage,Global Finance Inc,Premium SLA,Critical,Chat,Database Server,Security Admin,None,None,1,Database Team
+TCK-1290,URGENT: Slow throughput over Cisco AnyConnect VPN connection,VPN Issue,XYZ Ltd,Basic Support,High,Email,VPN,IT Admin,None,None,1,Network Team
+TCK-1291,User inquiry: Corrupted table index causing database deadlock,Database Outage,Global Finance Inc,Premium SLA,Medium,Phone,Database Server,External Partner,None,None,1,Application Team
+TCK-1292,URGENT: Keyboard and trackpad unresponsive on developer laptop,Hardware Fault,Global Finance Inc,Premium SLA,Critical,Portal,Laptop,External Partner,None,None,1,Application Team
+TCK-1293,Help needed: Azure Cloud VM unreachable via SSH connection,Cloud Outage,ABC Corp,Standard Enterprise,Critical,Portal,Cloud VM,Security Admin,None,None,1,Cloud Team
+TCK-1294,Issue reported: VPN tunnel dropping connection every few minutes,VPN Issue,Acme Technologies,Mission Critical,Medium,Email,Network Device,External Partner,None,None,1,Network Team
+TCK-1295,User inquiry: Database connection pool exhausted on production server,Database Outage,Acme Technologies,Mission Critical,High,Phone,Database Server,External Partner,None,None,1,Database Team
+TCK-1296,User inquiry: Solid state drive reporting SMART disk failure error,Hardware Fault,Acme Technologies,Mission Critical,Medium,Chat,Laptop,External Partner,None,None,1,Hardware Team
+TCK-1297,Desktop PC failing to POST hardware boot diagnostic,Hardware Fault,XYZ Ltd,Basic Support,High,Email,Laptop,Manager,None,None,1,Hardware Team
+TCK-1298,System Alert - Cloud storage bucket access permission denied,Cloud Outage,XYZ Ltd,Basic Support,Critical,Chat,Cloud VM,External Partner,None,None,1,Application Team
+TCK-1299,System Alert - AWS EC2 instance instance status check failed,Cloud Outage,Acme Technologies,Mission Critical,Critical,Phone,Cloud VM,IT Admin,None,None,1,Cloud Team
+TCK-1300,AWS EC2 instance instance status check failed,Cloud Outage,Global Finance Inc,Premium SLA,Critical,Email,Cloud VM,IT Admin,None,None,1,Cloud Team
+TCK-1301,Help needed: Corrupted table index causing database deadlock,Database Outage,Acme Technologies,Mission Critical,High,Chat,Database Server,IT Admin,None,None,1,Database Team
+TCK-1302,URGENT: AWS EC2 instance instance status check failed,Cloud Outage,ABC Corp,Standard Enterprise,Medium,Email,Cloud VM,Security Admin,None,None,1,Cloud Team
+TCK-1303,Issue reported: VPN client giving authentication error 800,VPN Issue,XYZ Ltd,Basic Support,High,Portal,VPN,IT Admin,None,None,1,Network Team
+TCK-1304,Help needed: Laptop screen flickering and going completely blank,Hardware Fault,XYZ Ltd,Basic Support,High,Email,Desktop,Employee,None,None,1,Hardware Team
+TCK-1305,URGENT: Cannot connect to corporate VPN from home network,VPN Issue,XYZ Ltd,Basic Support,Medium,Email,VPN,Security Admin,None,None,1,Network Team
+TCK-1306,URGENT: Suspicious multiple failed login attempts from unknown IP address,Security Incident,Acme Technologies,Mission Critical,Critical,Email,Network Device,Employee,None,None,1,Security Team
+TCK-1307,URGENT: Corrupted table index causing database deadlock,Database Outage,ABC Corp,Standard Enterprise,Critical,Phone,Database Server,Employee,Security Team,Network Team,2,Database Team
+TCK-1308,URGENT: Desktop app crashing with unhandled null pointer exception,Application Crash,XYZ Ltd,Basic Support,Medium,Email,Laptop,Security Admin,None,None,1,Application Team
+TCK-1309,Issue reported: CRM module memory leak causing severe slow response,Application Crash,ABC Corp,Standard Enterprise,Low,Chat,Application Server,Employee,None,None,1,Application Team
+TCK-1310,Issue reported: Employee account compromised sending phishing emails,Security Incident,XYZ Ltd,Basic Support,Medium,Email,Application Server,IT Admin,None,None,1,Security Team
+TCK-1311,Help needed: Desktop app crashing with unhandled null pointer exception,Application Crash,ABC Corp,Standard Enterprise,Medium,Chat,Application Server,IT Admin,None,None,1,Application Team
+TCK-1312,System Alert - VPN tunnel dropping connection every few minutes,VPN Issue,Global Finance Inc,Premium SLA,Critical,Portal,VPN,Employee,None,None,1,Network Team
+TCK-1313,Help needed: Remote access gateway timeout during sign in,VPN Issue,XYZ Ltd,Basic Support,High,Email,Network Device,Security Admin,None,None,1,Network Team
+TCK-1314,User inquiry: Cannot connect to corporate VPN from home network,VPN Issue,ABC Corp,Standard Enterprise,Medium,Portal,Network Device,Employee,None,None,1,Network Team
+TCK-1315,Help needed: Potential data exfiltration alert triggered on firewall,Security Incident,Global Finance Inc,Premium SLA,Critical,Portal,Application Server,Security Admin,None,None,1,Security Team
+TCK-1316,Issue reported: Desktop app crashing with unhandled null pointer exception,Application Crash,Acme Technologies,Mission Critical,Low,Email,Laptop,Employee,None,None,1,Application Team
+TCK-1317,Help needed: PostgreSQL database service stopped unexpectedly,Database Outage,Global Finance Inc,Premium SLA,Critical,Chat,Database Server,External Partner,None,None,1,Application Team
+TCK-1318,Issue reported: Database connection pool exhausted on production server,Database Outage,ABC Corp,Standard Enterprise,Critical,Portal,Database Server,Security Admin,None,None,1,Database Team
+TCK-1319,URGENT: Azure Cloud VM unreachable via SSH connection,Cloud Outage,ABC Corp,Standard Enterprise,High,Chat,Cloud VM,Manager,None,None,1,Cloud Team
+TCK-1320,Desktop app crashing with unhandled null pointer exception,Application Crash,Acme Technologies,Mission Critical,Medium,Phone,Laptop,Manager,None,None,1,Application Team
+TCK-1321,Help needed: Cannot connect to corporate VPN from home network,VPN Issue,Global Finance Inc,Premium SLA,High,Portal,VPN,IT Admin,None,None,1,Network Team
+TCK-1322,URGENT: Mobile app freezing on checkout payment screen,Application Crash,Global Finance Inc,Premium SLA,High,Email,Application Server,External Partner,None,None,1,Application Team
+TCK-1323,Slow throughput over Cisco AnyConnect VPN connection,VPN Issue,ABC Corp,Standard Enterprise,Low,Portal,VPN,Manager,Hardware Team,Application Team -> Database Team,3,Network Team
+TCK-1324,User inquiry: Database connection pool exhausted on production server,Database Outage,Global Finance Inc,Premium SLA,High,Chat,Database Server,Manager,None,None,1,Database Team
+TCK-1325,URGENT: Solid state drive reporting SMART disk failure error,Hardware Fault,Acme Technologies,Mission Critical,Medium,Email,Laptop,Employee,None,None,1,Hardware Team
+TCK-1326,URGENT: VPN client giving authentication error 800,VPN Issue,Global Finance Inc,Premium SLA,High,Portal,Network Device,IT Admin,None,None,1,Network Team
+TCK-1327,Issue reported: Remote access gateway timeout during sign in,VPN Issue,Acme Technologies,Mission Critical,Medium,Chat,Network Device,External Partner,None,None,1,Network Team
+TCK-1328,Ransomware threat notification detected on workstation,Security Incident,XYZ Ltd,Basic Support,Critical,Portal,Laptop,Manager,Network Team,Hardware Team -> Network Team,3,Security Team
+TCK-1329,Cloud storage bucket access permission denied,Cloud Outage,Acme Technologies,Mission Critical,High,Chat,Cloud VM,Employee,None,None,1,Cloud Team
+TCK-1330,VPN tunnel dropping connection every few minutes,VPN Issue,Acme Technologies,Mission Critical,Medium,Chat,VPN,Employee,None,None,1,Network Team
+TCK-1331,Overheating CPU causing laptop system thermal shutdown,Hardware Fault,ABC Corp,Standard Enterprise,Medium,Chat,Laptop,External Partner,Network Team,Application Team -> Security Team -> Security Team,4,Hardware Team
+TCK-1332,Help needed: Solid state drive reporting SMART disk failure error,Hardware Fault,Global Finance Inc,Premium SLA,Critical,Phone,Desktop,IT Admin,Security Team,Cloud Team,2,Application Team
+TCK-1333,URGENT: VPN tunnel dropping connection every few minutes,VPN Issue,XYZ Ltd,Basic Support,High,Chat,Network Device,Security Admin,Database Team,Application Team -> Hardware Team,3,Network Team
+TCK-1334,URGENT: Employee account compromised sending phishing emails,Security Incident,ABC Corp,Standard Enterprise,Critical,Portal,Network Device,Manager,Database Team,Network Team -> Database Team,3,Security Team
+TCK-1335,User inquiry: Overheating CPU causing laptop system thermal shutdown,Hardware Fault,ABC Corp,Standard Enterprise,Medium,Portal,Desktop,IT Admin,None,None,1,Hardware Team
+TCK-1336,Potential data exfiltration alert triggered on firewall,Security Incident,XYZ Ltd,Basic Support,Medium,Email,Database Server,Employee,Database Team,Database Team,2,Security Team
+TCK-1337,Help needed: Corrupted table index causing database deadlock,Database Outage,ABC Corp,Standard Enterprise,Medium,Portal,Database Server,External Partner,None,None,1,Database Team
+TCK-1338,Issue reported: Corrupted table index causing database deadlock,Database Outage,ABC Corp,Standard Enterprise,Medium,Chat,Database Server,IT Admin,Application Team,Application Team -> Application Team -> Network Team,4,Database Team
+TCK-1339,Issue reported: Unauthorized privilege escalation attempt in active directory,Security Incident,Acme Technologies,Mission Critical,Critical,Phone,Desktop,Manager,None,None,1,Security Team
+TCK-1340,User inquiry: Database connection pool exhausted on production server,Database Outage,XYZ Ltd,Basic Support,Critical,Chat,Database Server,IT Admin,Hardware Team,Security Team -> Hardware Team,3,Application Team
+TCK-1341,Issue reported: PostgreSQL database service stopped unexpectedly,Database Outage,ABC Corp,Standard Enterprise,Critical,Chat,Database Server,Security Admin,None,None,1,Database Team
+TCK-1342,Help needed: Desktop app crashing with unhandled null pointer exception,Application Crash,Global Finance Inc,Premium SLA,Low,Phone,Application Server,IT Admin,None,None,1,Application Team
+TCK-1343,URGENT: Remote access gateway timeout during sign in,VPN Issue,Global Finance Inc,Premium SLA,Medium,Email,Network Device,External Partner,Security Team,Database Team -> Cloud Team -> Network Team,4,Application Team
+TCK-1344,System Alert - PostgreSQL database service stopped unexpectedly,Database Outage,Acme Technologies,Mission Critical,High,Phone,Database Server,Manager,None,None,1,Database Team
+TCK-1345,User inquiry: Kubernetes pod crash loop backoff on cloud node,Cloud Outage,ABC Corp,Standard Enterprise,High,Chat,Cloud VM,IT Admin,None,None,1,Cloud Team
+TCK-1346,URGENT: Corrupted table index causing database deadlock,Database Outage,ABC Corp,Standard Enterprise,High,Portal,Database Server,Employee,None,None,1,Database Team
+TCK-1347,User inquiry: Remote access gateway timeout during sign in,VPN Issue,XYZ Ltd,Basic Support,Medium,Phone,Network Device,Manager,Cloud Team,Database Team,2,Network Team
+TCK-1348,Help needed: Slow throughput over Cisco AnyConnect VPN connection,VPN Issue,ABC Corp,Standard Enterprise,Low,Phone,Network Device,IT Admin,None,None,1,Network Team
+TCK-1349,SQL query execution timing out for reporting service,Database Outage,Global Finance Inc,Premium SLA,High,Phone,Database Server,Security Admin,Security Team,Application Team -> Hardware Team -> Hardware Team,4,Database Team
+TCK-1350,SQL query execution timing out for reporting service,Database Outage,ABC Corp,Standard Enterprise,Medium,Email,Database Server,External Partner,None,None,1,Database Team
+TCK-1351,Web portal throwing HTTP 500 internal server error,Application Crash,ABC Corp,Standard Enterprise,High,Portal,Application Server,Security Admin,Security Team,Network Team -> Database Team,3,Application Team
+TCK-1352,Help needed: Suspicious multiple failed login attempts from unknown IP address,Security Incident,XYZ Ltd,Basic Support,Medium,Phone,Application Server,Manager,None,None,1,Security Team
+TCK-1353,URGENT: Cannot connect to corporate VPN from home network,VPN Issue,Global Finance Inc,Premium SLA,Medium,Chat,Network Device,Security Admin,None,None,1,Network Team
+TCK-1354,User inquiry: Employee account compromised sending phishing emails,Security Incident,Global Finance Inc,Premium SLA,Critical,Email,Network Device,Employee,Network Team,Hardware Team,2,Security Team
+TCK-1355,Help needed: Remote access gateway timeout during sign in,VPN Issue,ABC Corp,Standard Enterprise,Medium,Chat,Network Device,Employee,Cloud Team,Security Team,2,Network Team
+TCK-1356,User inquiry: Keyboard and trackpad unresponsive on developer laptop,Hardware Fault,Global Finance Inc,Premium SLA,Medium,Chat,Desktop,Employee,Database Team,Security Team,2,Application Team
+TCK-1357,Corrupted table index causing database deadlock,Database Outage,Acme Technologies,Mission Critical,High,Portal,Database Server,IT Admin,Cloud Team,Application Team -> Security Team -> Network Team,4,Database Team
+TCK-1358,System Alert - Laptop screen flickering and going completely blank,Hardware Fault,ABC Corp,Standard Enterprise,Medium,Portal,Desktop,IT Admin,Database Team,Network Team,2,Hardware Team
+TCK-1359,Help needed: Suspicious multiple failed login attempts from unknown IP address,Security Incident,Global Finance Inc,Premium SLA,Critical,Portal,Database Server,Security Admin,None,None,1,Security Team
+TCK-1360,Help needed: Ransomware threat notification detected on workstation,Security Incident,Global Finance Inc,Premium SLA,Critical,Portal,Desktop,IT Admin,None,None,1,Security Team
+TCK-1361,Issue reported: Employee account compromised sending phishing emails,Security Incident,Acme Technologies,Mission Critical,High,Portal,Laptop,External Partner,Cloud Team,Application Team -> Cloud Team,3,Security Team
+TCK-1362,URGENT: PostgreSQL database service stopped unexpectedly,Database Outage,Global Finance Inc,Premium SLA,Critical,Email,Database Server,External Partner,None,None,1,Application Team
+TCK-1363,VPN client giving authentication error 800,VPN Issue,ABC Corp,Standard Enterprise,Low,Chat,VPN,External Partner,Database Team,Database Team,2,Network Team
+TCK-1364,System Alert - Database connection pool exhausted on production server,Database Outage,ABC Corp,Standard Enterprise,High,Phone,Database Server,Security Admin,None,None,1,Database Team
+TCK-1365,URGENT: AWS EC2 instance instance status check failed,Cloud Outage,Global Finance Inc,Premium SLA,Critical,Phone,Cloud VM,External Partner,None,None,1,Application Team
+TCK-1366,User inquiry: Slow throughput over Cisco AnyConnect VPN connection,VPN Issue,Global Finance Inc,Premium SLA,Medium,Email,Network Device,Employee,None,None,1,Network Team
+TCK-1367,URGENT: ERP software crashing upon submitting monthly invoice report,Application Crash,ABC Corp,Standard Enterprise,High,Chat,Desktop,IT Admin,None,None,1,Application Team
+TCK-1368,User inquiry: Cloud storage bucket access permission denied,Cloud Outage,Global Finance Inc,Premium SLA,Critical,Chat,Cloud VM,Employee,Hardware Team,Network Team -> Hardware Team -> Database Team,4,Cloud Team
+TCK-1369,URGENT: Azure Cloud VM unreachable via SSH connection,Cloud Outage,Global Finance Inc,Premium SLA,Medium,Phone,Cloud VM,IT Admin,None,None,1,Cloud Team
+TCK-1370,Help needed: Solid state drive reporting SMART disk failure error,Hardware Fault,Global Finance Inc,Premium SLA,Medium,Phone,Laptop,Employee,None,None,1,Application Team
+TCK-1371,Help needed: Employee account compromised sending phishing emails,Security Incident,Global Finance Inc,Premium SLA,Medium,Email,Application Server,External Partner,None,None,1,Security Team
+TCK-1372,User inquiry: Unauthorized privilege escalation attempt in active directory,Security Incident,Acme Technologies,Mission Critical,High,Portal,Cloud VM,Employee,None,None,1,Security Team
+TCK-1373,Issue reported: CRM module memory leak causing severe slow response,Application Crash,ABC Corp,Standard Enterprise,Medium,Portal,Application Server,Manager,Network Team,Database Team -> Security Team,3,Application Team
+TCK-1374,System Alert - Solid state drive reporting SMART disk failure error,Hardware Fault,Global Finance Inc,Premium SLA,Medium,Phone,Laptop,Employee,None,None,1,Application Team
+TCK-1375,System Alert - Ransomware threat notification detected on workstation,Security Incident,Acme Technologies,Mission Critical,Critical,Portal,Desktop,IT Admin,None,None,1,Security Team
+TCK-1376,Issue reported: Suspicious multiple failed login attempts from unknown IP address,Security Incident,XYZ Ltd,Basic Support,High,Email,Application Server,Manager,None,None,1,Security Team
+TCK-1377,URGENT: Potential data exfiltration alert triggered on firewall,Security Incident,ABC Corp,Standard Enterprise,High,Portal,Desktop,Security Admin,Hardware Team,Hardware Team -> Application Team -> Application Team,4,Security Team
+TCK-1378,Help needed: Overheating CPU causing laptop system thermal shutdown,Hardware Fault,XYZ Ltd,Basic Support,Critical,Portal,Desktop,Security Admin,Database Team,Cloud Team -> Cloud Team -> Cloud Team,4,Hardware Team
+TCK-1379,Solid state drive reporting SMART disk failure error,Hardware Fault,ABC Corp,Standard Enterprise,High,Phone,Laptop,Security Admin,None,None,1,Hardware Team
+TCK-1380,Solid state drive reporting SMART disk failure error,Hardware Fault,Acme Technologies,Mission Critical,Medium,Portal,Laptop,Manager,None,None,1,Hardware Team
+TCK-1381,CRM module memory leak causing severe slow response,Application Crash,Acme Technologies,Mission Critical,Low,Chat,Desktop,Manager,None,None,1,Application Team
+TCK-1382,System Alert - Overheating CPU causing laptop system thermal shutdown,Hardware Fault,Global Finance Inc,Premium SLA,High,Email,Laptop,Employee,None,None,1,Application Team
+TCK-1383,Cloud storage bucket access permission denied,Cloud Outage,Acme Technologies,Mission Critical,High,Email,Cloud VM,External Partner,None,None,1,Cloud Team
+TCK-1384,Ransomware threat notification detected on workstation,Security Incident,Acme Technologies,Mission Critical,High,Phone,Network Device,External Partner,None,None,1,Security Team
+TCK-1385,Issue reported: Database cluster replication delay critical alert,Database Outage,Acme Technologies,Mission Critical,Critical,Phone,Database Server,Security Admin,None,None,1,Database Team
+TCK-1386,System Alert - Suspicious multiple failed login attempts from unknown IP address,Security Incident,ABC Corp,Standard Enterprise,Medium,Chat,Cloud VM,External Partner,None,None,1,Security Team
+TCK-1387,ERP software crashing upon submitting monthly invoice report,Application Crash,Global Finance Inc,Premium SLA,Critical,Portal,Laptop,External Partner,None,None,1,Application Team
+TCK-1388,Issue reported: SQL query execution timing out for reporting service,Database Outage,Acme Technologies,Mission Critical,High,Phone,Database Server,Security Admin,None,None,1,Database Team
+TCK-1389,System Alert - Database connection pool exhausted on production server,Database Outage,Acme Technologies,Mission Critical,Medium,Portal,Database Server,Manager,None,None,1,Database Team
+TCK-1390,User inquiry: SQL query execution timing out for reporting service,Database Outage,XYZ Ltd,Basic Support,High,Chat,Database Server,Security Admin,None,None,1,Application Team
+TCK-1391,System Alert - Unauthorized privilege escalation attempt in active directory,Security Incident,Global Finance Inc,Premium SLA,High,Phone,Laptop,Employee,None,None,1,Security Team
+TCK-1392,Issue reported: Keyboard and trackpad unresponsive on developer laptop,Hardware Fault,ABC Corp,Standard Enterprise,Medium,Phone,Laptop,Employee,None,None,1,Hardware Team
+TCK-1393,User inquiry: VPN client giving authentication error 800,VPN Issue,Acme Technologies,Mission Critical,Low,Phone,VPN,Manager,None,None,1,Network Team
+TCK-1394,User inquiry: Potential data exfiltration alert triggered on firewall,Security Incident,Acme Technologies,Mission Critical,High,Phone,Application Server,Security Admin,None,None,1,Security Team
+TCK-1395,Issue reported: Employee account compromised sending phishing emails,Security Incident,XYZ Ltd,Basic Support,High,Email,Laptop,Security Admin,None,None,1,Security Team
+TCK-1396,SQL query execution timing out for reporting service,Database Outage,ABC Corp,Standard Enterprise,Medium,Phone,Database Server,External Partner,None,None,1,Database Team
+TCK-1397,VPN client giving authentication error 800,VPN Issue,Acme Technologies,Mission Critical,Low,Portal,VPN,External Partner,None,None,1,Network Team
+TCK-1398,Cannot connect to corporate VPN from home network,VPN Issue,ABC Corp,Standard Enterprise,Critical,Portal,Network Device,Security Admin,None,None,1,Network Team
+TCK-1399,Issue reported: Ransomware threat notification detected on workstation,Security Incident,ABC Corp,Standard Enterprise,Medium,Phone,Database Server,IT Admin,None,None,1,Security Team
+TCK-1400,System Alert - Azure Cloud VM unreachable via SSH connection,Cloud Outage,ABC Corp,Standard Enterprise,Critical,Portal,Cloud VM,External Partner,None,None,1,Cloud Team
+TCK-1401,User inquiry: Ransomware threat notification detected on workstation,Security Incident,XYZ Ltd,Basic Support,High,Phone,Network Device,IT Admin,None,None,1,Security Team
+TCK-1402,URGENT: Desktop PC failing to POST hardware boot diagnostic,Hardware Fault,Global Finance Inc,Premium SLA,High,Email,Desktop,Manager,Network Team,Network Team -> Cloud Team -> Hardware Team,4,Application Team
+TCK-1403,User inquiry: Database connection pool exhausted on production server,Database Outage,ABC Corp,Standard Enterprise,High,Chat,Database Server,Employee,None,None,1,Database Team
+TCK-1404,System Alert - Solid state drive reporting SMART disk failure error,Hardware Fault,ABC Corp,Standard Enterprise,Low,Phone,Laptop,Employee,None,None,1,Hardware Team
+TCK-1405,System Alert - Kubernetes pod crash loop backoff on cloud node,Cloud Outage,ABC Corp,Standard Enterprise,Medium,Email,Cloud VM,Employee,None,None,1,Cloud Team
+TCK-1406,Help needed: Database cluster replication delay critical alert,Database Outage,Global Finance Inc,Premium SLA,Medium,Phone,Database Server,External Partner,None,None,1,Application Team
+TCK-1407,System Alert - Database connection pool exhausted on production server,Database Outage,Global Finance Inc,Premium SLA,Critical,Chat,Database Server,Security Admin,None,None,1,Database Team
+TCK-1408,URGENT: Azure Cloud VM unreachable via SSH connection,Cloud Outage,XYZ Ltd,Basic Support,Medium,Chat,Cloud VM,Employee,None,None,1,Application Team
+TCK-1409,Potential data exfiltration alert triggered on firewall,Security Incident,Global Finance Inc,Premium SLA,Critical,Phone,Cloud VM,Manager,None,None,1,Security Team
+TCK-1410,System Alert - Azure Cloud VM unreachable via SSH connection,Cloud Outage,Global Finance Inc,Premium SLA,Critical,Portal,Cloud VM,Employee,Database Team,Network Team -> Application Team -> Application Team,4,Cloud Team
+TCK-1411,Issue reported: Auto-scaling group failing to launch new cloud instances,Cloud Outage,Acme Technologies,Mission Critical,Critical,Email,Cloud VM,External Partner,None,None,1,Cloud Team
+TCK-1412,Issue reported: Cloud storage bucket access permission denied,Cloud Outage,ABC Corp,Standard Enterprise,Critical,Chat,Cloud VM,Employee,None,None,1,Cloud Team
+TCK-1413,Help needed: VPN client giving authentication error 800,VPN Issue,XYZ Ltd,Basic Support,Low,Email,Network Device,IT Admin,None,None,1,Network Team
+TCK-1414,Issue reported: Unauthorized privilege escalation attempt in active directory,Security Incident,ABC Corp,Standard Enterprise,Critical,Portal,Database Server,Security Admin,None,None,1,Security Team
+TCK-1415,URGENT: Employee account compromised sending phishing emails,Security Incident,Global Finance Inc,Premium SLA,Critical,Chat,Laptop,Employee,Network Team,Network Team -> Cloud Team -> Cloud Team,4,Security Team
+TCK-1416,User inquiry: Kubernetes pod crash loop backoff on cloud node,Cloud Outage,XYZ Ltd,Basic Support,Critical,Portal,Cloud VM,Security Admin,None,None,1,Application Team
+TCK-1417,User inquiry: Employee account compromised sending phishing emails,Security Incident,Global Finance Inc,Premium SLA,Critical,Portal,Application Server,IT Admin,Database Team,Network Team -> Hardware Team -> Hardware Team,4,Security Team
+TCK-1418,User inquiry: Kubernetes pod crash loop backoff on cloud node,Cloud Outage,Acme Technologies,Mission Critical,High,Chat,Cloud VM,Employee,Hardware Team,Network Team -> Database Team -> Application Team,4,Cloud Team
+TCK-1419,URGENT: SQL query execution timing out for reporting service,Database Outage,Global Finance Inc,Premium SLA,High,Phone,Database Server,Manager,Network Team,Cloud Team -> Network Team,3,Database Team
+TCK-1420,Unauthorized privilege escalation attempt in active directory,Security Incident,XYZ Ltd,Basic Support,Medium,Chat,Laptop,Security Admin,None,None,1,Security Team
+TCK-1421,Issue reported: Potential data exfiltration alert triggered on firewall,Security Incident,XYZ Ltd,Basic Support,Critical,Phone,Laptop,Manager,None,None,1,Security Team
+TCK-1422,User inquiry: Unauthorized privilege escalation attempt in active directory,Security Incident,XYZ Ltd,Basic Support,Critical,Phone,Database Server,IT Admin,None,None,1,Security Team
+TCK-1423,System Alert - SQL query execution timing out for reporting service,Database Outage,Acme Technologies,Mission Critical,High,Email,Database Server,External Partner,Hardware Team,Hardware Team -> Security Team -> Security Team,4,Database Team
+TCK-1424,Desktop app crashing with unhandled null pointer exception,Application Crash,Acme Technologies,Mission Critical,Critical,Chat,Laptop,Employee,None,None,1,Application Team
+TCK-1425,System Alert - Mobile app freezing on checkout payment screen,Application Crash,ABC Corp,Standard Enterprise,Low,Chat,Application Server,External Partner,Network Team,Security Team -> Database Team -> Security Team,4,Application Team
+TCK-1426,Issue reported: Solid state drive reporting SMART disk failure error,Hardware Fault,ABC Corp,Standard Enterprise,Low,Phone,Laptop,IT Admin,None,None,1,Hardware Team
+TCK-1427,Slow throughput over Cisco AnyConnect VPN connection,VPN Issue,XYZ Ltd,Basic Support,Medium,Phone,Network Device,External Partner,None,None,1,Application Team
+TCK-1428,System Alert - VPN client giving authentication error 800,VPN Issue,Global Finance Inc,Premium SLA,Low,Phone,VPN,IT Admin,Database Team,Hardware Team -> Cloud Team,3,Network Team
+TCK-1429,Issue reported: Desktop app crashing with unhandled null pointer exception,Application Crash,XYZ Ltd,Basic Support,Medium,Portal,Laptop,IT Admin,Cloud Team,Network Team,2,Application Team
+TCK-1430,System Alert - Suspicious multiple failed login attempts from unknown IP address,Security Incident,Acme Technologies,Mission Critical,High,Email,VPN,External Partner,None,None,1,Security Team
+TCK-1431,Help needed: Laptop screen flickering and going completely blank,Hardware Fault,Global Finance Inc,Premium SLA,Medium,Phone,Laptop,Manager,None,None,1,Application Team
+TCK-1432,Auto-scaling group failing to launch new cloud instances,Cloud Outage,Acme Technologies,Mission Critical,Medium,Phone,Cloud VM,Security Admin,None,None,1,Cloud Team
+TCK-1433,URGENT: PostgreSQL database service stopped unexpectedly,Database Outage,XYZ Ltd,Basic Support,Medium,Phone,Database Server,Security Admin,Database Team,Database Team,2,Application Team
+TCK-1434,Issue reported: Solid state drive reporting SMART disk failure error,Hardware Fault,Global Finance Inc,Premium SLA,Low,Phone,Laptop,External Partner,None,None,1,Application Team
+TCK-1435,User inquiry: Auto-scaling group failing to launch new cloud instances,Cloud Outage,XYZ Ltd,Basic Support,Critical,Portal,Cloud VM,Employee,None,None,1,Application Team
+TCK-1436,URGENT: Mobile app freezing on checkout payment screen,Application Crash,Acme Technologies,Mission Critical,Critical,Chat,Desktop,External Partner,Security Team,Database Team -> Cloud Team -> Network Team,4,Application Team
+TCK-1437,User inquiry: VPN tunnel dropping connection every few minutes,VPN Issue,ABC Corp,Standard Enterprise,Medium,Chat,VPN,Employee,None,None,1,Network Team
+TCK-1438,PostgreSQL database service stopped unexpectedly,Database Outage,Global Finance Inc,Premium SLA,Medium,Chat,Database Server,Employee,None,None,1,Database Team
+TCK-1439,URGENT: Cannot connect to corporate VPN from home network,VPN Issue,ABC Corp,Standard Enterprise,Low,Email,Network Device,Manager,None,None,1,Network Team
+TCK-1440,System Alert - Unauthorized privilege escalation attempt in active directory,Security Incident,Global Finance Inc,Premium SLA,Medium,Chat,VPN,Security Admin,None,None,1,Security Team
+TCK-1441,ERP software crashing upon submitting monthly invoice report,Application Crash,ABC Corp,Standard Enterprise,Low,Phone,Application Server,External Partner,None,None,1,Application Team
+TCK-1442,Remote access gateway timeout during sign in,VPN Issue,Acme Technologies,Mission Critical,High,Chat,VPN,External Partner,None,None,1,Network Team
+TCK-1443,System Alert - AWS EC2 instance instance status check failed,Cloud Outage,XYZ Ltd,Basic Support,High,Chat,Cloud VM,External Partner,None,None,1,Application Team
+TCK-1444,Mobile app freezing on checkout payment screen,Application Crash,XYZ Ltd,Basic Support,High,Portal,Desktop,IT Admin,None,None,1,Application Team
+TCK-1445,URGENT: Web portal throwing HTTP 500 internal server error,Application Crash,ABC Corp,Standard Enterprise,Critical,Portal,Desktop,Employee,None,None,1,Application Team
+TCK-1446,Issue reported: Kubernetes pod crash loop backoff on cloud node,Cloud Outage,Global Finance Inc,Premium SLA,High,Email,Cloud VM,External Partner,Security Team,Network Team -> Security Team,3,Application Team
+TCK-1447,URGENT: Auto-scaling group failing to launch new cloud instances,Cloud Outage,Global Finance Inc,Premium SLA,Critical,Portal,Cloud VM,External Partner,None,None,1,Application Team
+TCK-1448,System Alert - PostgreSQL database service stopped unexpectedly,Database Outage,Acme Technologies,Mission Critical,High,Portal,Database Server,IT Admin,None,None,1,Database Team
+TCK-1449,Help needed: VPN tunnel dropping connection every few minutes,VPN Issue,Global Finance Inc,Premium SLA,High,Email,Network Device,Security Admin,None,None,1,Network Team
+TCK-1450,System Alert - Solid state drive reporting SMART disk failure error,Hardware Fault,XYZ Ltd,Basic Support,Medium,Email,Desktop,Employee,None,None,1,Hardware Team
+TCK-1451,Help needed: Cloud storage bucket access permission denied,Cloud Outage,Acme Technologies,Mission Critical,Critical,Chat,Cloud VM,Manager,None,None,1,Cloud Team
+TCK-1452,User inquiry: Overheating CPU causing laptop system thermal shutdown,Hardware Fault,ABC Corp,Standard Enterprise,High,Email,Laptop,Manager,None,None,1,Hardware Team
+TCK-1453,Database cluster replication delay critical alert,Database Outage,ABC Corp,Standard Enterprise,Medium,Chat,Database Server,Employee,None,None,1,Database Team
+TCK-1454,User inquiry: Database connection pool exhausted on production server,Database Outage,Acme Technologies,Mission Critical,High,Phone,Database Server,External Partner,None,None,1,Database Team
+TCK-1455,Issue reported: Mobile app freezing on checkout payment screen,Application Crash,Global Finance Inc,Premium SLA,Low,Chat,Desktop,External Partner,None,None,1,Application Team
+TCK-1456,User inquiry: VPN tunnel dropping connection every few minutes,VPN Issue,XYZ Ltd,Basic Support,Critical,Email,VPN,External Partner,Security Team,Hardware Team -> Database Team -> Network Team,4,Application Team
+TCK-1457,Issue reported: Corrupted table index causing database deadlock,Database Outage,ABC Corp,Standard Enterprise,High,Portal,Database Server,IT Admin,None,None,1,Database Team
+TCK-1458,System Alert - Mobile app freezing on checkout payment screen,Application Crash,Global Finance Inc,Premium SLA,Low,Phone,Application Server,Security Admin,Database Team,Database Team -> Cloud Team -> Cloud Team,4,Application Team
+TCK-1459,System Alert - Web portal throwing HTTP 500 internal server error,Application Crash,Global Finance Inc,Premium SLA,Low,Phone,Desktop,IT Admin,None,None,1,Application Team
+TCK-1460,System Alert - PostgreSQL database service stopped unexpectedly,Database Outage,Acme Technologies,Mission Critical,Critical,Portal,Database Server,IT Admin,None,None,1,Database Team
+TCK-1461,Issue reported: Corrupted table index causing database deadlock,Database Outage,XYZ Ltd,Basic Support,High,Email,Database Server,Employee,Cloud Team,Network Team -> Security Team,3,Application Team
+TCK-1462,Employee account compromised sending phishing emails,Security Incident,ABC Corp,Standard Enterprise,Critical,Chat,Application Server,Security Admin,Application Team,Network Team,2,Security Team
+TCK-1463,Issue reported: Database connection pool exhausted on production server,Database Outage,XYZ Ltd,Basic Support,High,Portal,Database Server,Manager,Cloud Team,Hardware Team,2,Application Team
+TCK-1464,Desktop app crashing with unhandled null pointer exception,Application Crash,ABC Corp,Standard Enterprise,Medium,Chat,Application Server,IT Admin,None,None,1,Application Team
+TCK-1465,Issue reported: Unauthorized privilege escalation attempt in active directory,Security Incident,XYZ Ltd,Basic Support,High,Email,Cloud VM,Security Admin,None,None,1,Security Team
+TCK-1466,Issue reported: Mobile app freezing on checkout payment screen,Application Crash,Acme Technologies,Mission Critical,Low,Email,Desktop,Security Admin,None,None,1,Application Team
+TCK-1467,URGENT: Database connection pool exhausted on production server,Database Outage,XYZ Ltd,Basic Support,High,Portal,Database Server,External Partner,Cloud Team,Network Team -> Cloud Team -> Cloud Team,4,Application Team
+TCK-1468,System Alert - Cannot connect to corporate VPN from home network,VPN Issue,XYZ Ltd,Basic Support,Critical,Chat,VPN,External Partner,None,None,1,Application Team
+TCK-1469,System Alert - Slow throughput over Cisco AnyConnect VPN connection,VPN Issue,XYZ Ltd,Basic Support,High,Portal,Network Device,Security Admin,None,None,1,Network Team
+TCK-1470,Issue reported: Overheating CPU causing laptop system thermal shutdown,Hardware Fault,ABC Corp,Standard Enterprise,High,Email,Desktop,IT Admin,Network Team,Cloud Team -> Cloud Team -> Network Team,4,Hardware Team
+TCK-1471,System Alert - ERP software crashing upon submitting monthly invoice report,Application Crash,XYZ Ltd,Basic Support,High,Portal,Laptop,IT Admin,Cloud Team,Database Team -> Database Team -> Cloud Team,4,Application Team
+TCK-1472,Help needed: Potential data exfiltration alert triggered on firewall,Security Incident,Acme Technologies,Mission Critical,High,Chat,Network Device,Security Admin,None,None,1,Security Team
+TCK-1473,Issue reported: CRM module memory leak causing severe slow response,Application Crash,Acme Technologies,Mission Critical,Critical,Phone,Desktop,External Partner,None,None,1,Application Team
+TCK-1474,Mobile app freezing on checkout payment screen,Application Crash,Global Finance Inc,Premium SLA,Low,Email,Desktop,Manager,None,None,1,Application Team
+TCK-1475,URGENT: Azure Cloud VM unreachable via SSH connection,Cloud Outage,XYZ Ltd,Basic Support,Critical,Portal,Cloud VM,External Partner,Network Team,Network Team -> Security Team -> Hardware Team,4,Application Team
+TCK-1476,URGENT: CRM module memory leak causing severe slow response,Application Crash,ABC Corp,Standard Enterprise,High,Portal,Application Server,IT Admin,None,None,1,Application Team
+TCK-1477,System Alert - Cloud storage bucket access permission denied,Cloud Outage,Acme Technologies,Mission Critical,High,Chat,Cloud VM,External Partner,None,None,1,Cloud Team
+TCK-1478,Help needed: PostgreSQL database service stopped unexpectedly,Database Outage,XYZ Ltd,Basic Support,High,Portal,Database Server,Employee,None,None,1,Application Team
+TCK-1479,Issue reported: AWS EC2 instance instance status check failed,Cloud Outage,ABC Corp,Standard Enterprise,Critical,Chat,Cloud VM,IT Admin,None,None,1,Cloud Team
+TCK-1480,URGENT: PostgreSQL database service stopped unexpectedly,Database Outage,ABC Corp,Standard Enterprise,Critical,Phone,Database Server,Employee,None,None,1,Database Team
+TCK-1481,User inquiry: Desktop PC failing to POST hardware boot diagnostic,Hardware Fault,XYZ Ltd,Basic Support,Low,Phone,Desktop,Security Admin,Network Team,Cloud Team -> Network Team -> Cloud Team,4,Hardware Team
+TCK-1482,URGENT: Solid state drive reporting SMART disk failure error,Hardware Fault,Acme Technologies,Mission Critical,Critical,Chat,Desktop,External Partner,None,None,1,Hardware Team
+TCK-1483,System Alert - Database cluster replication delay critical alert,Database Outage,Global Finance Inc,Premium SLA,Critical,Portal,Database Server,External Partner,None,None,1,Application Team
+TCK-1484,Ransomware threat notification detected on workstation,Security Incident,XYZ Ltd,Basic Support,Critical,Portal,Database Server,IT Admin,None,None,1,Security Team
+TCK-1485,Help needed: Desktop PC failing to POST hardware boot diagnostic,Hardware Fault,ABC Corp,Standard Enterprise,Low,Email,Desktop,Security Admin,None,None,1,Hardware Team
+TCK-1486,User inquiry: Desktop PC failing to POST hardware boot diagnostic,Hardware Fault,Acme Technologies,Mission Critical,Critical,Email,Laptop,Manager,Database Team,Security Team,2,Hardware Team
+TCK-1487,Issue reported: SQL query execution timing out for reporting service,Database Outage,Acme Technologies,Mission Critical,Medium,Portal,Database Server,Manager,None,None,1,Database Team
+TCK-1488,User inquiry: Cloud storage bucket access permission denied,Cloud Outage,ABC Corp,Standard Enterprise,Critical,Phone,Cloud VM,External Partner,None,None,1,Cloud Team
+TCK-1489,Help needed: Potential data exfiltration alert triggered on firewall,Security Incident,Global Finance Inc,Premium SLA,Critical,Chat,Network Device,Manager,Database Team,Network Team -> Cloud Team -> Application Team,4,Security Team
+TCK-1490,URGENT: Potential data exfiltration alert triggered on firewall,Security Incident,Acme Technologies,Mission Critical,High,Chat,Network Device,Security Admin,None,None,1,Security Team
+TCK-1491,System Alert - Auto-scaling group failing to launch new cloud instances,Cloud Outage,Acme Technologies,Mission Critical,High,Chat,Cloud VM,Employee,None,None,1,Cloud Team
+TCK-1492,User inquiry: Solid state drive reporting SMART disk failure error,Hardware Fault,Acme Technologies,Mission Critical,Medium,Phone,Desktop,Manager,None,None,1,Hardware Team
+TCK-1493,Help needed: Mobile app freezing on checkout payment screen,Application Crash,XYZ Ltd,Basic Support,Medium,Chat,Laptop,Security Admin,None,None,1,Application Team
+TCK-1494,System Alert - Solid state drive reporting SMART disk failure error,Hardware Fault,Acme Technologies,Mission Critical,Medium,Email,Laptop,Security Admin,None,None,1,Hardware Team
+TCK-1495,Issue reported: Kubernetes pod crash loop backoff on cloud node,Cloud Outage,Global Finance Inc,Premium SLA,High,Email,Cloud VM,Security Admin,None,None,1,Cloud Team
+TCK-1496,System Alert - VPN tunnel dropping connection every few minutes,VPN Issue,Global Finance Inc,Premium SLA,Critical,Phone,Network Device,Manager,None,None,1,Network Team
+TCK-1497,System Alert - ERP software crashing upon submitting monthly invoice report,Application Crash,ABC Corp,Standard Enterprise,Medium,Phone,Application Server,Manager,None,None,1,Application Team
+TCK-1498,System Alert - AWS EC2 instance instance status check failed,Cloud Outage,Acme Technologies,Mission Critical,Critical,Phone,Cloud VM,IT Admin,None,None,1,Cloud Team
+TCK-1499,Help needed: Suspicious multiple failed login attempts from unknown IP address,Security Incident,XYZ Ltd,Basic Support,High,Phone,Cloud VM,External Partner,None,None,1,Security Team
+TCK-1500,System Alert - Auto-scaling group failing to launch new cloud instances,Cloud Outage,Global Finance Inc,Premium SLA,Critical,Chat,Cloud VM,Employee,None,None,1,Cloud Team
+TCK-1501,SQL query execution timing out for reporting service,Database Outage,Acme Technologies,Mission Critical,Medium,Portal,Database Server,Security Admin,Hardware Team,Hardware Team,2,Database Team
+TCK-1502,Kubernetes pod crash loop backoff on cloud node,Cloud Outage,Acme Technologies,Mission Critical,Critical,Chat,Cloud VM,External Partner,None,None,1,Cloud Team
+TCK-1503,User inquiry: Keyboard and trackpad unresponsive on developer laptop,Hardware Fault,Global Finance Inc,Premium SLA,Medium,Portal,Laptop,Security Admin,Database Team,Network Team,2,Application Team
+TCK-1504,System Alert - SQL query execution timing out for reporting service,Database Outage,ABC Corp,Standard Enterprise,Critical,Portal,Database Server,Employee,Cloud Team,Network Team -> Network Team,3,Database Team
+TCK-1505,Issue reported: Keyboard and trackpad unresponsive on developer laptop,Hardware Fault,ABC Corp,Standard Enterprise,Medium,Email,Desktop,Security Admin,None,None,1,Hardware Team
+TCK-1506,Issue reported: Ransomware threat notification detected on workstation,Security Incident,XYZ Ltd,Basic Support,Critical,Phone,Laptop,Employee,None,None,1,Security Team
+TCK-1507,Help needed: Potential data exfiltration alert triggered on firewall,Security Incident,Global Finance Inc,Premium SLA,High,Chat,Application Server,Manager,None,None,1,Security Team
+TCK-1508,System Alert - Auto-scaling group failing to launch new cloud instances,Cloud Outage,Acme Technologies,Mission Critical,High,Portal,Cloud VM,IT Admin,None,None,1,Cloud Team
+TCK-1509,Help needed: Overheating CPU causing laptop system thermal shutdown,Hardware Fault,XYZ Ltd,Basic Support,Low,Email,Laptop,IT Admin,None,None,1,Hardware Team
+TCK-1510,URGENT: Potential data exfiltration alert triggered on firewall,Security Incident,Global Finance Inc,Premium SLA,Medium,Chat,VPN,Security Admin,None,None,1,Security Team
+TCK-1511,URGENT: Web portal throwing HTTP 500 internal server error,Application Crash,Acme Technologies,Mission Critical,Critical,Chat,Laptop,Manager,Hardware Team,Hardware Team -> Security Team -> Database Team,4,Application Team
+TCK-1512,VPN client giving authentication error 800,VPN Issue,XYZ Ltd,Basic Support,High,Phone,Network Device,External Partner,None,None,1,Application Team
+TCK-1513,Issue reported: VPN tunnel dropping connection every few minutes,VPN Issue,Acme Technologies,Mission Critical,Critical,Phone,Network Device,Employee,None,None,1,Network Team
+TCK-1514,Help needed: Ransomware threat notification detected on workstation,Security Incident,ABC Corp,Standard Enterprise,Medium,Email,Laptop,Manager,None,None,1,Security Team
+TCK-1515,Issue reported: Solid state drive reporting SMART disk failure error,Hardware Fault,Global Finance Inc,Premium SLA,Low,Email,Laptop,Employee,Database Team,Hardware Team,2,Application Team
+TCK-1516,Help needed: Overheating CPU causing laptop system thermal shutdown,Hardware Fault,Global Finance Inc,Premium SLA,Low,Email,Desktop,Employee,Network Team,Cloud Team -> Hardware Team,3,Application Team
+TCK-1517,Help needed: SQL query execution timing out for reporting service,Database Outage,Global Finance Inc,Premium SLA,High,Chat,Database Server,Employee,None,None,1,Database Team
+TCK-1518,Ransomware threat notification detected on workstation,Security Incident,ABC Corp,Standard Enterprise,Medium,Email,Database Server,Manager,None,None,1,Security Team
+TCK-1519,Help needed: Kubernetes pod crash loop backoff on cloud node,Cloud Outage,XYZ Ltd,Basic Support,Critical,Chat,Cloud VM,Employee,None,None,1,Application Team
+TCK-1520,URGENT: Database cluster replication delay critical alert,Database Outage,XYZ Ltd,Basic Support,Critical,Phone,Database Server,Employee,Cloud Team,Network Team -> Hardware Team,3,Application Team
+TCK-1521,URGENT: Database connection pool exhausted on production server,Database Outage,Global Finance Inc,Premium SLA,Critical,Portal,Database Server,External Partner,Network Team,Cloud Team -> Database Team,3,Application Team
+TCK-1522,URGENT: AWS EC2 instance instance status check failed,Cloud Outage,Acme Technologies,Mission Critical,High,Chat,Cloud VM,Manager,Database Team,Hardware Team -> Security Team -> Network Team,4,Cloud Team
+TCK-1523,Help needed: Cloud storage bucket access permission denied,Cloud Outage,XYZ Ltd,Basic Support,Critical,Chat,Cloud VM,IT Admin,None,None,1,Application Team
+TCK-1524,Issue reported: CRM module memory leak causing severe slow response,Application Crash,XYZ Ltd,Basic Support,High,Chat,Laptop,External Partner,None,None,1,Application Team
+TCK-1525,Issue reported: Desktop app crashing with unhandled null pointer exception,Application Crash,ABC Corp,Standard Enterprise,Critical,Phone,Application Server,External Partner,None,None,1,Application Team
+TCK-1526,System Alert - Mobile app freezing on checkout payment screen,Application Crash,ABC Corp,Standard Enterprise,Medium,Portal,Laptop,External Partner,None,None,1,Application Team
+TCK-1527,Issue reported: Keyboard and trackpad unresponsive on developer laptop,Hardware Fault,Acme Technologies,Mission Critical,Medium,Chat,Desktop,Employee,None,None,1,Hardware Team
+TCK-1528,Help needed: PostgreSQL database service stopped unexpectedly,Database Outage,Acme Technologies,Mission Critical,Medium,Portal,Database Server,Security Admin,None,None,1,Database Team
+TCK-1529,Issue reported: Cannot connect to corporate VPN from home network,VPN Issue,XYZ Ltd,Basic Support,Low,Chat,VPN,Employee,Cloud Team,Application Team,2,Network Team
+TCK-1530,User inquiry: Cloud storage bucket access permission denied,Cloud Outage,Acme Technologies,Mission Critical,High,Portal,Cloud VM,Employee,Hardware Team,Network Team,2,Cloud Team
+TCK-1531,Help needed: Suspicious multiple failed login attempts from unknown IP address,Security Incident,Global Finance Inc,Premium SLA,Medium,Phone,Network Device,IT Admin,None,None,1,Security Team
+TCK-1532,Help needed: AWS EC2 instance instance status check failed,Cloud Outage,ABC Corp,Standard Enterprise,Medium,Email,Cloud VM,Manager,None,None,1,Cloud Team
+TCK-1533,User inquiry: SQL query execution timing out for reporting service,Database Outage,XYZ Ltd,Basic Support,Critical,Portal,Database Server,External Partner,None,None,1,Application Team
+TCK-1534,Mobile app freezing on checkout payment screen,Application Crash,Global Finance Inc,Premium SLA,Medium,Email,Application Server,Security Admin,None,None,1,Application Team
+TCK-1535,Mobile app freezing on checkout payment screen,Application Crash,XYZ Ltd,Basic Support,Critical,Phone,Desktop,External Partner,None,None,1,Application Team
+TCK-1536,Help needed: Mobile app freezing on checkout payment screen,Application Crash,Global Finance Inc,Premium SLA,High,Email,Desktop,Security Admin,None,None,1,Application Team
+TCK-1537,User inquiry: Corrupted table index causing database deadlock,Database Outage,Acme Technologies,Mission Critical,Critical,Chat,Database Server,IT Admin,Hardware Team,Cloud Team,2,Database Team
+TCK-1538,Issue reported: Slow throughput over Cisco AnyConnect VPN connection,VPN Issue,Acme Technologies,Mission Critical,Medium,Email,Network Device,Employee,None,None,1,Network Team
+TCK-1539,User inquiry: Remote access gateway timeout during sign in,VPN Issue,XYZ Ltd,Basic Support,Critical,Phone,VPN,Employee,Hardware Team,Cloud Team -> Database Team,3,Network Team
+TCK-1540,Help needed: Database cluster replication delay critical alert,Database Outage,ABC Corp,Standard Enterprise,High,Portal,Database Server,External Partner,None,None,1,Database Team
+TCK-1541,System Alert - Ransomware threat notification detected on workstation,Security Incident,ABC Corp,Standard Enterprise,Critical,Portal,Application Server,External Partner,None,None,1,Security Team
+TCK-1542,URGENT: CRM module memory leak causing severe slow response,Application Crash,ABC Corp,Standard Enterprise,Critical,Chat,Laptop,IT Admin,None,None,1,Application Team
+TCK-1543,VPN tunnel dropping connection every few minutes,VPN Issue,ABC Corp,Standard Enterprise,High,Portal,VPN,Security Admin,None,None,1,Network Team
+TCK-1544,Help needed: Web portal throwing HTTP 500 internal server error,Application Crash,XYZ Ltd,Basic Support,Critical,Chat,Application Server,Manager,None,None,1,Application Team
+TCK-1545,URGENT: Desktop app crashing with unhandled null pointer exception,Application Crash,XYZ Ltd,Basic Support,Critical,Email,Laptop,Security Admin,Hardware Team,Cloud Team,2,Application Team
+TCK-1546,User inquiry: AWS EC2 instance instance status check failed,Cloud Outage,Global Finance Inc,Premium SLA,Critical,Chat,Cloud VM,IT Admin,None,None,1,Cloud Team
+TCK-1547,System Alert - SQL query execution timing out for reporting service,Database Outage,XYZ Ltd,Basic Support,High,Email,Database Server,Security Admin,Hardware Team,Database Team -> Cloud Team,3,Application Team
+TCK-1548,Cannot connect to corporate VPN from home network,VPN Issue,Global Finance Inc,Premium SLA,High,Email,Network Device,Security Admin,None,None,1,Network Team
+TCK-1549,Help needed: ERP software crashing upon submitting monthly invoice report,Application Crash,XYZ Ltd,Basic Support,Critical,Email,Desktop,IT Admin,None,None,1,Application Team
+TCK-1550,SQL query execution timing out for reporting service,Database Outage,Acme Technologies,Mission Critical,Medium,Portal,Database Server,Manager,Security Team,Hardware Team -> Network Team -> Hardware Team,4,Database Team

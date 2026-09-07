@@ -1,0 +1,7 @@
+resolver_group,is_security_authorized,handled_assets,handled_intents,max_priority_handled
+Network Team,False,VPN|Network Device,VPN Issue,Critical
+Security Team,True,VPN|Laptop|Desktop|Database Server|Cloud VM|Application Server|Network Device,Security Incident,Critical
+Database Team,False,Database Server,Database Outage,Critical
+Hardware Team,False,Laptop|Desktop,Hardware Fault,High
+Application Team,False,Application Server|Laptop|Desktop,Application Crash,Critical
+Cloud Team,False,Cloud VM,Cloud Outage,Critical

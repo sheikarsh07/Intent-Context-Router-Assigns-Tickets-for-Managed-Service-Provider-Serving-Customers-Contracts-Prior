@@ -1,0 +1,5 @@
+organization,contract,allowed_resolvers,partner_allowed_resolvers,security_restricted,max_priority
+ABC Corp,Standard Enterprise,Network Team|Security Team|Database Team|Hardware Team|Application Team|Cloud Team,Network Team|Hardware Team|Application Team,False,Critical
+XYZ Ltd,Basic Support,Network Team|Security Team|Hardware Team|Application Team,Hardware Team|Application Team,True,High
+Acme Technologies,Mission Critical,Network Team|Security Team|Database Team|Hardware Team|Application Team|Cloud Team,Network Team|Security Team|Database Team|Hardware Team|Application Team|Cloud Team,False,Critical
+Global Finance Inc,Premium SLA,Network Team|Security Team|Database Team|Application Team|Cloud Team,Application Team|Network Team,True,Critical
