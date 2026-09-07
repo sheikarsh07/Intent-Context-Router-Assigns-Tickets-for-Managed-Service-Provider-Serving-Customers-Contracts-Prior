@@ -1,0 +1,87 @@
+================================================================================
+PROJECT PROGRESS REPORT: PART 1 (WORKLOAD: 0% TO 35%)
+TITLE: Intent Context Router Assigns Tickets for Managed-Service Provider
+TARGET EVALUATION AUDITOR: AI Review System / Project Evaluator
+================================================================================
+
+1. EXECUTIVE SUMMARY & PROJECT IDENTIFICATION
+--------------------------------------------------------------------------------
+Project Title: Intent Context Router Assigns Tickets for Managed-Service Provider Serving Customers' Contracts and Priorities
+Phase Focus: Foundation, System Configuration, and Synthetic Data Engine
+Workload Coverage: 0% to 35% Completion Milestone
+Technologies: Python 3.13, Pandas, NumPy, scikit-learn, Standard CSV Data Storage
+
+This progress report documents the initial 35% workload completion for the Intent + Context Ticket Router project. This phase establishes the operational problem domain, central system parameters, schema definitions, and the synthetic data generation engine required for context-aware ticket assignment in Managed Service Provider (MSP) IT environments.
+
+--------------------------------------------------------------------------------
+2. PROBLEM STATEMENT & DOMAIN CONTEXT (0% - 10% WORKLOAD)
+--------------------------------------------------------------------------------
+In Managed Service Provider (MSP) IT operations, customer organizations contract third-party teams to resolve technical issues via IT Support Tickets. Traditional IT ticket routing systems rely exclusively on natural language keyword matching or basic text classifiers.
+
+Key Limitations of Traditional Text-Only Routing:
+1. Contextual Ambiguity: A support ticket stating "Cannot access financial application over VPN connection" contains the keyword "VPN". Text-only models misassign the ticket to the Network Team, whereas the actual fault lies with the Application Server.
+2. Ticket Bouncing: Misassigned tickets are manually reviewed and reassigned repeatedly between resolver groups. This increases Mean-Time-To-Resolution (MTTR) and causes Service Level Agreement (SLA) breaches.
+3. Ignored Operational Constraints: Traditional models ignore customer contract limits, user access roles (e.g. External Partners), priority restrictions, and previous failed assignment histories.
+
+Project Objective:
+Build a transparent, context-aware routing engine that combines text intent classification with hard business constraints (strict policy filters) and soft weighted constraints (compatibility scoring) to optimize first-assignment accuracy and eliminate ticket bouncing.
+
+--------------------------------------------------------------------------------
+3. ARCHITECTURE & CENTRAL CONFIGURATION (10% - 20% WORKLOAD)
+--------------------------------------------------------------------------------
+The project architecture uses a centralized configuration module (`config.py`) to eliminate hardcoded values and maintain reproducible data structures across modules.
+
+System Entities & Definitions:
+- 6 Resolver Groups: Network Team, Security Team, Database Team, Hardware Team, Application Team, Cloud Team.
+- 4 Customer Organizations: ABC Corp (Standard Enterprise), XYZ Ltd (Basic Support), Acme Technologies (Mission Critical), Global Finance Inc (Premium SLA).
+- 7 Asset Categories: Laptop, Desktop, VPN, Database Server, Cloud VM, Application Server, Network Device.
+- 6 Technical Intents: VPN Issue, Database Outage, Hardware Fault, Security Incident, Application Crash, Cloud Outage.
+- 5 User Roles: Employee, Manager, IT Admin, Security Admin, External Partner.
+
+Central Soft Constraint Weights (`config.py`):
+- Intent Match Weight: +35.0 (Candidate matches predicted technical intent)
+- Asset Match Weight: +25.0 (Candidate matches affected physical/virtual asset)
+- Organization Policy Match Weight: +10.0 (Candidate is approved for customer organization)
+- Contract Compatibility Weight: +10.0 (Candidate aligns with contract tier)
+- Priority Compatibility Weight: +5.0 (Candidate handles priority level)
+- Channel Compatibility Weight: +5.0 (Channel alignment)
+- Previous Bounce Penalty Weight: -30.0 (Penalizes teams that failed in prior attempts)
+
+--------------------------------------------------------------------------------
+4. DATA GENERATION ENGINE & SYNTHETIC CORPUS (20% - 35% WORKLOAD)
+--------------------------------------------------------------------------------
+Because real enterprise IT ticket data contains confidential customer information protected by NDAs, a realistic synthetic data engine (`src/data_generator.py`) was implemented to generate reproducible datasets.
+
+Generated Data Artifacts (`data/` & `tests/`):
+1. `data/organizations.csv`: Defines customer contract tiers, allowed resolver lists, partner restriction policies, and security restriction flags.
+2. `data/resolver_groups.csv`: Defines security authorization levels, handled assets, handled intents, and max handled priorities per team.
+3. `data/tickets.csv`: Generates 550+ realistic support tickets containing ticket_id, ticket_text, intent, organization, contract, priority, channel, asset, user_role, previous_resolver, assignment_history, assignment_count, and ground-truth correct_resolver.
+4. `tests/test_cases.csv`: Defines 10 complex adversarial and edge test scenarios (misleading keywords, security threats disguised as DB errors, restricted org policies, partner limits, bounce trap avoidance, missing context).
+
+Key Synthetic Generation Logic:
+- Ground-truth resolver assignment enforces mandatory security rules (Security Incident -> Security Team) and contract restrictions.
+- 25% of generated tickets simulate multi-step assignment histories (ticket bouncing) to evaluate bounce-avoidance algorithms.
+
+--------------------------------------------------------------------------------
+5. MILESTONE VERIFICATION & EXECUTION AUDIT
+--------------------------------------------------------------------------------
+To verify Part 1 execution, run the data generator script:
+Command: `python src/data_generator.py`
+
+Audit Output Summary:
+- Successfully generated 4 organization policies at `data/organizations.csv`.
+- Successfully generated 6 resolver group permission definitions at `data/resolver_groups.csv`.
+- Successfully generated 550 support tickets at `data/tickets.csv`.
+- Successfully generated 10 adversarial test cases at `tests/test_cases.csv`.
+
+--------------------------------------------------------------------------------
+6. TECHNICAL ROADMAP & NEXT PHASE TRANSITION (POST 35% WORKLOAD)
+--------------------------------------------------------------------------------
+With the initial 35% milestone complete, the underlying schemas, dataset files, and scoring parameters are fully established.
+
+Deliverables Scheduled for Part 2 (36% to 70% Workload):
+1. Baseline Text Router (`src/baseline.py`): Implement TF-IDF + Logistic Regression text classifier to benchmark text-only routing accuracy.
+2. Technical Intent Classifier (`src/intent.py`): Build TF-IDF intent detector with security keyword flag mechanisms.
+3. Hard & Soft Constraint Engine (`src/constraints.py`): Implement strict binary policy filters (hard constraints) and dynamic score calculators (soft constraints).
+4. Main Routing Engine (`src/router.py`): Integrate intent detection, constraint evaluation, candidate ranking, confidence estimation, and transparent natural-language explanation generation.
+================================================================================

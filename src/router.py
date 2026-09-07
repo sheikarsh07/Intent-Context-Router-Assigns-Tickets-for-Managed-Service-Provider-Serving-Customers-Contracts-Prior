@@ -2,11 +2,10 @@
 Context-Aware Routing Engine (Phases 4, 5, 6)
 Implements end-to-end transparent ticket routing pipeline:
 1. Intent Detection
-2. Candidate Resolver Generation
-3. Hard Constraint Filtering
-4. Soft Constraint Weighted Scoring
-5. Winner Selection & Confidence Assessment
-6. Explainable Decision Generation
+2. Hard Constraint Filtering
+3. Soft Constraint Weighted Scoring
+4. Winner Selection & Confidence Assessment
+5. Explainable Rationale Generation
 """
 
 import os
@@ -21,45 +20,37 @@ from src.constraints import ConstraintEngine
 
 
 class ContextAwareRouter:
-    """Context-aware router taking text + full operational context."""
+    """Context-aware ticket routing engine."""
 
     def __init__(self, df_train: pd.DataFrame = None):
         self.intent_classifier = IntentClassifier()
         self.constraint_engine = ConstraintEngine()
         self.is_trained = False
-        
+
         if df_train is not None:
             self.train(df_train)
 
     def train(self, df_train: pd.DataFrame):
-        """Trains intent classifier on historical tickets."""
+        """Trains intent classifier on historical training tickets."""
         self.intent_classifier.train(df_train)
         self.is_trained = True
         return self
 
     def route_ticket(self, ticket_data: dict) -> dict:
         """
-        Main routing function. Accepts dictionary containing ticket fields:
-        - ticket_text
-        - organization
-        - contract
-        - priority
-        - channel
-        - asset
-        - user_role
-        - previous_resolver
-        - assignment_history
+        Main routing function. Processes a single ticket dictionary and returns
+        the selected resolver group, confidence score, score breakdown, and natural-language explanation.
         """
         ticket_text = ticket_data.get("ticket_text", "")
         previous_resolver = str(ticket_data.get("previous_resolver", "None"))
         assignment_history = str(ticket_data.get("assignment_history", "None"))
 
-        # Step 1: Detect Intent from text
+        # Step 1: Detect Intent from ticket text
         intent_info = self.intent_classifier.predict_intent(ticket_text)
         detected_intent = intent_info["detected_intent"]
         intent_confidence = intent_info["confidence"]
 
-        # Step 2: Evaluate Hard & Soft Constraints across all Resolver Groups
+        # Step 2 & 3: Evaluate Hard and Soft Constraints across all Resolver Groups
         hard_constraints_evaluated = {}
         soft_constraints_applied = {}
         eligible_candidates = []
@@ -67,6 +58,7 @@ class ContextAwareRouter:
         explanations_map = {}
 
         for resolver in config.RESOLVER_GROUPS:
+            # Layer 1: Hard Filter
             is_eligible, rejection_reasons = self.constraint_engine.evaluate_hard_constraints(
                 resolver, ticket_data, intent_info
             )
@@ -75,6 +67,7 @@ class ContextAwareRouter:
                 "rejection_reasons": rejection_reasons
             }
 
+            # Layer 2: Soft Weighted Scoring
             if is_eligible:
                 eligible_candidates.append(resolver)
                 soft_result = self.constraint_engine.calculate_soft_score(
@@ -88,9 +81,9 @@ class ContextAwareRouter:
                 scores_map[resolver] = 0.0
                 soft_constraints_applied[resolver] = {}
 
-        # Step 3: Selection & Fallback Logic
+        # Step 4: Selection & Confidence Calculation
         if not eligible_candidates:
-            # Fallback if all candidates are hard-constrained
+            # Fallback if all candidates violate hard constraints
             selected_resolver = "Application Team"
             confidence = 0.30
             confidence_status = "Low Confidence — manual review recommended (All candidates hard-constrained)"
@@ -98,18 +91,11 @@ class ContextAwareRouter:
             bounce_avoided = False
         else:
             # Rank eligible candidates by total score
-            sorted_candidates = sorted(eligible_candidates, key=lambda x: scores_map[x], reverse=True)
+            sorted_candidates = sorted(eligible_candidates, key=lambda r: scores_map[r], reverse=True)
             selected_resolver = sorted_candidates[0]
             top_score = scores_map[selected_resolver]
 
-            # Calculate confidence score based on top score and score separation
-            if len(sorted_candidates) > 1:
-                second_score = scores_map[sorted_candidates[1]]
-                margin = top_score - second_score
-            else:
-                margin = top_score
-
-            # Normalize confidence (0.0 - 1.0)
+            # Calculate confidence score based on top score and intent probability
             raw_conf = (top_score / 85.0) * 0.60 + (intent_confidence * 0.40)
             confidence = float(np.clip(raw_conf, 0.35, 0.99))
 
@@ -121,21 +107,20 @@ class ContextAwareRouter:
                 confidence_status = "Low Confidence — manual review recommended"
 
             # Check if assignment history was considered and bounce avoided
-            history_str = assignment_history + " " + previous_resolver
             previous_assignment_considered = (previous_resolver != "None" or assignment_history != "None")
             bounce_avoided = (previous_resolver in config.RESOLVER_GROUPS and selected_resolver != previous_resolver)
 
-            # Build explainable natural language explanation
+            # Build explainable natural language rationale
             points = explanations_map.get(selected_resolver, [])
             explanation_lines = [
-                f"**{selected_resolver}** selected as best match (Score: {top_score:.1f}/85.0):",
+                f"**{selected_resolver}** selected as best match (Score: {top_score:.1f}/85.0):"
             ]
             for idx, pt in enumerate(points, 1):
                 explanation_lines.append(f"  {idx}. {pt}")
             
             explanation_lines.append("  - No hard constraints were violated for this selection.")
-            
-            # Mention rejected candidates if any
+
+            # Append hard constraint rejections if any candidates were disqualified
             rejected_teams = [r for r, info in hard_constraints_evaluated.items() if not info["is_eligible"]]
             if rejected_teams:
                 rejection_summary = ", ".join([f"{r} ({hard_constraints_evaluated[r]['rejection_reasons'][0]})" for r in rejected_teams])
@@ -159,7 +144,7 @@ class ContextAwareRouter:
         }
 
     def route_dataframe(self, df: pd.DataFrame) -> list:
-        """Helper to route a full dataframe of tickets."""
+        """Routes a full dataframe of tickets and returns list of predicted resolver groups."""
         results = []
         for _, row in df.iterrows():
             ticket_dict = row.to_dict()
